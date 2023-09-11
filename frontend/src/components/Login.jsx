@@ -1,14 +1,13 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
-function Login() {
+function Login(){
     const router = useNavigate();
-    return (
+    return(
         <div>
-            <h1>Login</h1>
-            <button onClick={()=> router('/')}>Back To Homepage</button>
+            <h1>Login Page</h1>
+            <button onClick={()=> router('/')}>back to home</button>
         </div>
     )
 }
-
 
 export default Login;
