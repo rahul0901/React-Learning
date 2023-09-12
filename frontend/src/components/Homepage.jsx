@@ -15,6 +15,7 @@ function Homepage() {
             <button onClick={register}>Register Here!</button>
             {/* <button onClick={()=> router('/register')}>Register Here!</button> */}
             <button onClick={routeToLogin}>Go to Login</button>
+            <button onClick={()=> router('/instagram')}>Go to Instagram</button>
         </div>
     )
 }
