@@ -6,14 +6,14 @@ function Homepage() {
         router('/login')
     }
 
-    // function register(){
-    //     router('/register')
-    // }
+    function register(){
+        router('/register')
+    }
     return (
         <div>
             <h1>Homepage</h1>
-            {/* <button onClick={register}>Register here</button> */}
-            <button onClick={()=> router('/register')}>Register Here!</button>
+            <button onClick={register}>Register Here!</button>
+            {/* <button onClick={()=> router('/register')}>Register Here!</button> */}
             <button onClick={routeToLogin}>Go to Login</button>
         </div>
     )
