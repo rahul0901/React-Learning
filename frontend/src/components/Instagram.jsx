@@ -7,7 +7,6 @@ import { useState } from "react";
 const Instagram = ()=>{
 
     const [likes, setcounter] = useState(0);
-    // const [dislikes, setcounterde] = useState(0);
     const [comments, setcounter1] = useState(0);
 
 
