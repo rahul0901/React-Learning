@@ -1,17 +1,26 @@
 import { useEffect, useState } from "react";
- 
-function UseEffect1(){
+import { useNavigate } from "react-router-dom";
 
-    const [number, setcounter]= useState(0);
+function UseEffect1() {
 
-    useEffect(()=>{
+    const redirect = useNavigate();
+
+    const [number, setcounter] = useState(0);
+
+    useEffect(() => {
         alert("Rendered")
     })
 
-    return(
+    function backToHome() {
+
+        redirect('/')
+    }
+
+    return (
         <div>
             <h1>Use Effect - {number}</h1>
-            <button onClick={()=>setcounter((changevalue)=>changevalue+1)}>value</button>
+            <button onClick={() => setcounter((changevalue) => changevalue + 1)}>value</button>
+            <button onClick={backToHome}>Homepage</button>
         </div>
     )
 }
