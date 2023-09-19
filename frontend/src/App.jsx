@@ -9,6 +9,8 @@ import UseEffect1 from './components/UseEffect1';
 import Effect2 from './components/Effect2';
 import Effect3 from './components/Effect3';
 import Effect4 from './components/Effect4';
+import Params from './components/Params';
+import Product from './components/Product';
 
 function App() {
   return (
@@ -16,15 +18,16 @@ function App() {
       Hello Rahul!
       <Routes>
         <Route exact path='/' element={<Homepage />} />
-        <Route exact path='/login' element={<Login/>}/>
-        <Route exact path='/register'  element={<Register/>}/>
-        <Route exact path='/counter' element={<Counter/>} />
-        <Route exact path='/Instagram' element = {<Instagram/>} />
-        <Route exact path='/useeffect' element = {<UseEffect1/>} />
-        <Route exact path='/effect2' element = {<Effect2/>}/>
-        <Route exact path='/effect3' element = {<Effect3/>}/>
-        <Route exact path='/effect4' element = {<Effect4/>}/>
-
+        <Route exact path='/login' element={<Login />} />
+        <Route exact path='/register' element={<Register />} />
+        <Route exact path='/counter' element={<Counter />} />
+        <Route exact path='/Instagram' element={<Instagram />} />
+        <Route exact path='/useeffect' element={<UseEffect1 />} />
+        <Route exact path='/effect2' element={<Effect2 />} />
+        <Route exact path='/effect3' element={<Effect3 />} />
+        <Route exact path='/effect4' element={<Effect4 />} />
+        <Route exact path='/params' element= {<Params/>} />
+        <Route exact path='/product/:dynamicslugchangermethod' element = {<Product/>} />
       </Routes>
     </div>
   );

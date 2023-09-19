@@ -13,6 +13,8 @@ const Effect2 = () => {
             <h1>Effect 2 - No dependency - {abc}</h1>
             <button onClick={()=>(setcounter((changevalue)=>changevalue+1))}>+</button>
         </div>
+
+        
     )
 }
 
