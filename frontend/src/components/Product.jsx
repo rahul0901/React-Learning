@@ -8,7 +8,7 @@ function Product(){
 
     return(
         <div>
-            <h1></h1>
+            <h1>Product Page - {dynamicslugchangermethod}</h1>
         </div>
     )
 }
