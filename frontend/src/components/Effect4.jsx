@@ -10,7 +10,7 @@ const Effect4 = () => {
     }, [count,count1]);
     return(
         <div>
-            <h1>Effect4 - multiple dependency - {count}, {count1}</h1>
+            <h1>Effect4 - multiple dependency -:   {count}, {count1}</h1>
             <button onClick={()=>(valuechanger((setvalue)=>setvalue+1))}>+</button>
             <button onClick={()=>(valuechanger1((setvalue1)=>setvalue1-1))}>-</button>
         </div>

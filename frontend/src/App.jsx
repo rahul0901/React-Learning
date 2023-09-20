@@ -11,6 +11,7 @@ import Effect3 from './components/Effect3';
 import Effect4 from './components/Effect4';
 import Params from './components/Params';
 import Product from './components/Product';
+import Mantra from './components/Mantras';
 
 function App() {
   return (
@@ -26,8 +27,9 @@ function App() {
         <Route exact path='/effect2' element={<Effect2 />} />
         <Route exact path='/effect3' element={<Effect3 />} />
         <Route exact path='/effect4' element={<Effect4 />} />
-        <Route exact path='/params' element= {<Params/>} />
-        <Route exact path='/product/:dynamicslugchangermethod' element = {<Product/>} />
+        <Route exact path='/params' element={<Params />} />
+        <Route exact path='/product/:dynamicslugchangermethod' element={<Product />} />
+        <Route exact path='/mantras' element={<Mantra />} />
       </Routes>
     </div>
   );

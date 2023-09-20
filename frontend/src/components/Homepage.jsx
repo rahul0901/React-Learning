@@ -25,9 +25,10 @@ function Homepage() {
             <button onClick={routeToLogin}>Go to Login</button>
             <button onClick={()=> router('/instagram')}>Go to Instagram</button>
             <button onClick={()=> router('/useeffect')}>Effect1</button>
-            <button onClick={{effect2Redirect}}>Effect2</button>
+            <button onClick={effect2Redirect}>Effect2</button>
             <button onClick={()=> router('/effect3')}>Effect3</button>
-            <button onClick={{effect4Redirect}}>Effect4</button>
+            <button onClick={effect4Redirect}>Effect4</button>
+            <button onClick={()=> router('/mantras')}>Mantra Count Assists</button>
         </div>
     )
 }
