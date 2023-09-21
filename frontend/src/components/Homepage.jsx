@@ -29,6 +29,7 @@ function Homepage() {
             <button onClick={()=> router('/effect3')}>Effect3</button>
             <button onClick={effect4Redirect}>Effect4</button>
             <button onClick={()=> router('/mantras')}>Mantra Count Assists</button>
+            <button onClick={()=> router('/mapping')}>Go To Mapping</button>
         </div>
     )
 }

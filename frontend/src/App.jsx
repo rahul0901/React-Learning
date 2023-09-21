@@ -12,12 +12,13 @@ import Effect4 from './components/Effect4';
 import Params from './components/Params';
 import Product from './components/Product';
 import Mantra from './components/Mantras';
+import Mapping from './components/Mapping';
 
 function App() {
   return (
     <div className="App">
       Hello Rahul!
-      <Routes>
+      <Routes> 
         <Route exact path='/' element={<Homepage />} />
         <Route exact path='/login' element={<Login />} />
         <Route exact path='/register' element={<Register />} />
@@ -30,6 +31,8 @@ function App() {
         <Route exact path='/params' element={<Params />} />
         <Route exact path='/product/:dynamicslugchangermethod' element={<Product />} />
         <Route exact path='/mantras' element={<Mantra />} />
+        //sending props shown below..
+        <Route exact path='/mapping' element={<Mapping names = {["Dhoni", "abd", "virat"]}/>} />
       </Routes>
     </div>
   );

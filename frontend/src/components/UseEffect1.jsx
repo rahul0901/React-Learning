@@ -18,7 +18,7 @@ function UseEffect1() {
 
     return (
         <div>
-            <h1>Use Effect - {number}</h1>
+            <h1>Use Effect1 - No Dependency - {number}</h1>
             <button onClick={() => setcounter((changevalue) => changevalue + 1)}>value</button>
             <button onClick={backToHome}>Homepage</button>
         </div>
