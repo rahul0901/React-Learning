@@ -17,6 +17,10 @@ function Homepage() {
     function effect4Redirect(){
         router('/effect4')
     }
+
+    function goToTerinaryy(){
+        router('/terinary')
+    }
     return (
         <div>
             <h1>Homepage</h1>
@@ -30,6 +34,9 @@ function Homepage() {
             <button onClick={effect4Redirect}>Effect4</button>
             <button onClick={()=> router('/mantras')}>Mantra Count Assists</button>
             <button onClick={()=> router('/mapping')}>Go To Mapping</button>
+            <button onClick={goToTerinaryy}>Ternary</button>
+            <button onClick={()=> router('/styled')}>Styled</button>
+            <button onClick={()=> router('/checkcountercounts')}>Alert Counters</button>
         </div>
     )
 }

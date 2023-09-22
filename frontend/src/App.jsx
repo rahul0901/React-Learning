@@ -13,12 +13,17 @@ import Params from './components/Params';
 import Product from './components/Product';
 import Mantra from './components/Mantras';
 import Mapping from './components/Mapping';
+import Terinaryy from './components/Terinaryy';
+import { useState } from 'react';
+import Styled from './components/Styled';
+import CounterCheck from './components/CounterCheck';
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <div className="App">
       Hello Rahul!
-      <Routes> 
+      <Routes>
         <Route exact path='/' element={<Homepage />} />
         <Route exact path='/login' element={<Login />} />
         <Route exact path='/register' element={<Register />} />
@@ -32,7 +37,10 @@ function App() {
         <Route exact path='/product/:dynamicslugchangermethod' element={<Product />} />
         <Route exact path='/mantras' element={<Mantra />} />
         //sending props shown below..
-        <Route exact path='/mapping' element={<Mapping names = {["Dhoni", "abd", "virat"]}/>} />
+        <Route exact path='/mapping' element={<Mapping names={["Dhoni", "abd", "virat"]} />} />
+        <Route exact path='/terinary' element={<Terinaryy isLoggedIn = {isLoggedIn} setIsLoggedIn = {setIsLoggedIn} />} />
+        <Route exact path='/styled' element={<Styled/>} />
+        <Route exact path='/checkcountercounts' element={<CounterCheck />} />
       </Routes>
     </div>
   );
