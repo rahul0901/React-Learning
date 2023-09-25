@@ -12,6 +12,7 @@ import Effect3 from './Components/Effect3';
 import Effect4 from './Components/Effect4';
 import Params from './Components/Params';
 import SingleProduct from './Components/SingleProduct';
+import Mapping from './Components/Mapping';
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
         <Route exact path='/effect4' element={<Effect4/>}/>
         <Route exact path='/params'  element = {<Params/>}/>
         <Route exact path='/singleproduct/:id' element={<SingleProduct/>}/>
-        <Route exact path='/mapping' element={<Mapping />} />
+        <Route exact path='/mapping' element={<Mapping names = {["element1", "element2", "element3"]} kuchbhi = {"hii"}/>} /> 
+        {/* above names and kuchbhi is prop - parameter concept same as function concepts */}
         <Route exact path='/ternary' element = {<Ternary/>}/>
       </Routes>
     </div>
