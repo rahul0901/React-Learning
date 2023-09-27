@@ -16,6 +16,7 @@ import Mapping from './Components/Mapping';
 import DynamicStyling from './Components/DynamicStyling';
 import ChildrenProp from './Components/ChildrenProp';
 import Landing from './Components/Landing';
+import Register from './Components/Register';
 
 function App() {
   const [isLoggedIn, setLoggedIn] = useState(false);
@@ -39,7 +40,18 @@ function App() {
         <Route exact path='/children-props' element={<ChildrenProp />} />
         <Route exact path='/landing' element={<Landing leftUl={["Customer Service",
           "Newsletter",
-          "Find a store"]} RightUl={["Sign In", "Favourites", "Shopping Bag"]} DownLeft={["Ladies", "Men", 'Divided', "Baby", "Kids", "H&M HOME", "Sport", "Sustainability", "Sale"]} />} />
+          "Find a store"]} RightUl={["Sign In", "Favourites", "Shopping Bag"]} DownLeft={["Ladies", "Men", 'Divided', "Baby", "Kids", "H&M HOME", "Sport", "Sustainability", "Sale"]} FootShop={["Ladies",
+            "Men",
+            "Baby",
+            "Kids",
+            "H&M HOME",
+            "Sport"]} FootCorporate={["Career at H&M",
+              "About H&M group",
+              "Sustainability H&M Group",
+              "Press",
+              "Investor relations",
+              "Corporate governance"]} />} />
+        <Route exact path='/register' element={< Register />} />
       </Routes>
     </div>
   );

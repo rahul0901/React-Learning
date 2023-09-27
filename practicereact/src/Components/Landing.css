@@ -7,7 +7,7 @@
 }
 
 #header {
-    width: 90%;
+    width: 95%;
     height: 164px;
     margin: auto;
     display: flex;
@@ -63,7 +63,7 @@
 
 .nav-up-3 a {
     text-decoration: none;
-    margin-right: 16px;
+    margin-left: 16px;
     font-family: 'HMSansHebrew-Regular', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -72,16 +72,21 @@
     line-height: 16px;
 }
 
+.nav-up-3 {
+    justify-content: end;
+}
+
 .navbar-down {
     width: 100%;
     height: 32px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     /* border: 1px solid brown; */
 }
 
-.nav-down-1{
-    width: 80%;
+.nav-down-1 {
+    width: 79%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -89,9 +94,9 @@
     border: 1px solid royalblue;
 }
 
-.nav-down-1 a{
+.nav-down-1 a {
     text-decoration: none;
-    padding-left:16px;
+    padding-left: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
@@ -99,22 +104,70 @@
     color: #222222;
 }
 
-.nav-down-2{
-    width: 20%;
+.nav-down-2 {
+    width: 18%;
     height: 100%;
     border: 1px solid royalblue;
 }
 
-.nav-down-2-input{
+.nav-down-2-input {
     width: 100%;
     height: 100%;
     border: 1px solid;
 }
 
-.nav-down-2-input input{
+.nav-down-2-input input {
     border: none;
     outline: none;
     border-bottom: 1px solid black;
 }
+
+#footer {
+    width: 100%;
+    height: 558px;
+    border: 1px solid black;
+    background-color: aliceblue;
+    padding: 64px 32px;
+}
+
+.foot-parent {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 138px;
+}
+
+.foot-child-up {
+    width: 100%;
+    height: 233px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.child-up-div-one>a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: red;
+}
+
+.child-up-div-two>a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: red;
+}
+
+.foot-child-down {
+    width: 100%;
+    height: 181px;
+    border: 1px solid black;
+}
+
+
 
 /* HM Sans Regular, 'HMSansHebrew-Regular','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','Osaka','メイリオ','Meiryo','MS Pゴシック','MS PGothic', */

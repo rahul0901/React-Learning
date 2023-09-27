@@ -1,9 +1,9 @@
 import './Landing.css';
-import 'font-awesome/css/font-awesome.css';
+import 'font-awesome/css/font-awesome.min.css';
 
 const Landing = (props) => {
 
-    const { leftUl, RightUl, DownLeft } = props;
+    const { leftUl, RightUl, DownLeft, FootShop, FootCorporate } = props;
 
     return (
         <>
@@ -15,21 +15,23 @@ const Landing = (props) => {
                                 {leftUl.map((item) => (
                                     <a href="#">{item}</a>
                                 ))}
-                                <i className="fa-solid fa-ellipsis"></i>
+                                <i className="fas fa-ellipsis"></i>
+                                {/* fas fa-ellipsis 
+                                fa-solid fa-ellipsis*/}
                             </div>
                             <div className="nav-up-2">
                                 HnM
                             </div>
                             <div className="nav-up-3">
-                                {RightUl.map((item) => (
-                                    <a href="#">{item}</a>
+                                {RightUl.map((item, i) => (
+                                    <a href="#" key={i}>{item}</a>
                                 ))}
                             </div>
                         </div>
                         <div className="navbar-down">
                             <div className="nav-down-1">
-                                {DownLeft.map((item)=>(
-                                    <a href="#">
+                                {DownLeft.map((item, i) => (
+                                    <a href="#" key={i}>
                                         <a href="#">{item}</a>
                                     </a>
                                 ))}
@@ -39,6 +41,38 @@ const Landing = (props) => {
                                     <input type="text" />
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="footer">
+                    <div className="foot-parent">
+                        <div className="foot-child-up">
+                            <div className="child-up-div-one">
+                                <p>Shop</p>
+                                {FootShop.map((item, i) => (
+                                    <a key={i}>
+                                        <p>{item}</p>
+                                    </a>
+                                ))}
+                            </div>
+                            <div className="child-up-div-two">
+                                <p>CORPORATE INFO</p>
+                                {FootCorporate.map((item, i) => (
+                                    <a key={i}>
+                                        <a>{item}</a>
+                                    </a>
+                                ))}
+                            </div>
+                            <div className="child-up-div-three">
+                                <p>HELP</p>
+                            </div>
+                            <div className="child-up-div-four">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div className="foot-child-down">
+                            down
                         </div>
                     </div>
                 </div>
