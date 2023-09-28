@@ -3,7 +3,7 @@ import 'font-awesome/css/font-awesome.min.css';
 
 const Landing = (props) => {
 
-    const { leftUl, RightUl, DownLeft, FootShop, FootCorporate } = props;
+    const { leftUl, RightUl, DownLeft, FootShop, FootCorporate, FootHelp } = props;
 
     return (
         <>
@@ -66,9 +66,15 @@ const Landing = (props) => {
                             </div>
                             <div className="child-up-div-three">
                                 <p>HELP</p>
+                                {FootHelp.map((item, i) => (
+                                    <a key={i}>
+                                        <a>{item}</a>
+                                    </a>
+                                ))}
                             </div>
                             <div className="child-up-div-four">
-                                <p></p>
+                                <p>Sign up now and be the first to know about exclusive offers, latest fashion news & style tips!</p>
+                                <a href="#">Read More <span>-&gt</span></a>
                             </div>
                         </div>
                         <div className="foot-child-down">

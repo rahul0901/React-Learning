@@ -50,7 +50,14 @@ function App() {
               "Sustainability H&M Group",
               "Press",
               "Investor relations",
-              "Corporate governance"]} />} />
+              "Corporate governance"]}
+          FootHelp={["Customer Service",
+            "My H&M",
+            "Find a store",
+            "Legal & Privacy",
+            "Contact",
+            "Report a scam", "Cookie Notice",
+            "Cookie Settings"]} />} />
         <Route exact path='/register' element={< Register />} />
       </Routes>
     </div>
