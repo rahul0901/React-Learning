@@ -174,6 +174,52 @@
     color: #222222;
 }
 
+#body-content-5{
+    width: 100%;
+    height: 645px;
+    margin-top: 24px;
+    background-image: url('https://image.hm.com/content/dam/global_campaigns/season_08/divided/5088b/5088B-3x2-the-new-cabin-chic.jpg?imwidth=1260');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.bc-5-child{
+    padding: 40px;
+    color: white;
+}
+
+.bc-5-child :nth-child(1){
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #ffffff;
+}
+
+.bc-5-child :nth-child(2){
+    margin-bottom: 26px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.bc-5-child button{
+    padding: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #222222;
+}
+
 /* .bc-2-below-text img{
     width: 70%;
 } */

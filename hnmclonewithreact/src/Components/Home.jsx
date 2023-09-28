@@ -1,7 +1,7 @@
 import './Home.css';
 const Home = (props) => {
 
-    const { HomeFirstUl, HomeBCButton, SmallBannerBtn, PopularTitle, PopularContent, PopularImage } = props;
+    const { HomeFirstUl, HomeBCButton, SmallBannerBtn, PopularTitle, PopularContent, PopularImage, ShopNow } = props;
 
     return (
         <>
@@ -73,6 +73,16 @@ const Home = (props) => {
                                 </div>
                             ))}
 
+                        </div>
+                    </div>
+
+                    <div id="body-content-5">
+                        <div className="bc-5-child">
+                            <h2>It's cabin chic, but not really</h2>
+                            <h3>Styles inspired by the great outdoors.</h3>
+                            {ShopNow.map((btncontent) => (
+                                <button>{btncontent}</button>
+                            ))}
                         </div>
                     </div>
                 </div>
