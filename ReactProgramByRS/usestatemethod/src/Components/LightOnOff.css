@@ -1,0 +1,13 @@
+.ON{
+    color: black;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 2px solid;
+}
+
+.OFF{
+    color: black;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid;
+}
