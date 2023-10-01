@@ -17,6 +17,7 @@ import DynamicStyling from './Components/DynamicStyling';
 import ChildrenProp from './Components/ChildrenProp';
 import Landing from './Components/Landing';
 import Register from './Components/Register';
+import Register2 from './Components/Register2';
 
 function App() {
   const [isLoggedIn, setLoggedIn] = useState(false);
@@ -59,6 +60,7 @@ function App() {
             "Report a scam", "Cookie Notice",
             "Cookie Settings"]} />} />
         <Route exact path='/register' element={< Register />} />
+        <Route exact path='/register2' element = {< Register2/>}/>
       </Routes>
     </div>
   );
