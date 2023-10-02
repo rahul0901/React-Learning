@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.active-btn {
+    background-color: green;
+    color: black;
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border: none;
+}
+
+.inactive-btn {
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border: none;
+}
