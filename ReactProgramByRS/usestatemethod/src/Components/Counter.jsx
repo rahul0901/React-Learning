@@ -11,7 +11,8 @@ const Counter = () => {
   return (
     <>
         <h2>Counter - {count}</h2>
-        <button onClick={()=>(setcount((prevVAlue)=>prevVAlue+1))}>increament</button>
+        <button onClick={()=>(setcount((prevVAlue)=>prevVAlue+1))}>increament</button> 
+        {/* here prevvalue ka value usestate mai jata hai  */}
         <button onClick={decreamentCounter}>decrease</button>
     </>
   )
