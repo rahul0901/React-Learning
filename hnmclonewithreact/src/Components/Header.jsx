@@ -1,7 +1,8 @@
 import './Header.css';
+import './HeaderMedia.css';
 function Header(props) {
 
-    const { leftUl, RightUl, DownLeft } = props;
+    const { leftUl, RightUl, IClass, DownLeft } = props;
 
     return (
         <>
@@ -10,19 +11,18 @@ function Header(props) {
                     <div id="navbar">
                         <div className="navbar-up">
                             <div className="nav-up-1">
+                                <i class="fa-solid fa-bars fa-xl"></i>
                                 {leftUl.map((item) => (
                                     <a href="#">{item}</a>
                                 ))}
                                 <i className="fas fa-ellipsis"></i>
-                                {/* fas fa-ellipsis 
-                                fa-solid fa-ellipsis*/}
                             </div>
                             <div className="nav-up-2">
                                 <img src="https://www2.hm.com/content/dam/courtesypageimages/down_for_maintenance.jpeg" alt="" width="100%" height="100%" />
                             </div>
                             <div className="nav-up-3">
                                 {RightUl.map((item, i) => (
-                                    <a href="#" key={i}>{item}</a>
+                                    <a href="#" key={i}>{IClass[i]} <span>{item}</span> </a>
                                 ))}
                             </div>
                         </div>
@@ -36,7 +36,8 @@ function Header(props) {
                             </div>
                             <div className="nav-down-2">
                                 <div className="nav-down-2-input">
-                                    <input type="text" placeholder='Search Products'/>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" placeholder='Search Products' />
                                 </div>
                             </div>
                         </div>
