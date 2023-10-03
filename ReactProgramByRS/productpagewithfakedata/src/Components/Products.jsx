@@ -1,24 +1,36 @@
 import React, { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
+import axios from 'axios';
+import './Product.css'
 
 const Products = () => {
 
     const [allData, setData] = useState(0);
 
-    useEffect(()=>{
+    useEffect(() => {
         toast.success('page rendered!')
-        // async function getProduct(){
-        //     const jsonData = await axios.get('https://fakestoreapi.com/products');
-        //     console.log(jsonData.data)
-        // }
+        async function getProduct() {
+            const jsonData = await axios.get('https://fakestoreapi.com/products');
+            // console.log(jsonData.data)
+            setData(jsonData.data)
+        }
 
-        // getProduct()
-    },[])
-  return (
-    <>
-    <div>Products</div>
-    </>
-  )
+        getProduct()
+    }, [])
+    return (
+        <>
+            <div>Products</div>
+            <div>
+                {allData?.length ? <div className='check2'>{allData.map((item, index) => (
+                    <div key={index} className='check1'>
+                        <img src={item.image} alt="" />
+                        <h2>Product Title: {item.title}</h2>
+                        <h4>Price: {item.price}</h4>
+                    </div>
+                ))}</div> : <div>{toast.loading('Fetching Data')}</div>}
+            </div>
+        </>
+    )
 }
 
-export default Products
+export default Products;
