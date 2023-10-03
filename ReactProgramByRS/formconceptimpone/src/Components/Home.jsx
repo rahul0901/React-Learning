@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+
+    const route = useNavigate()
+
     const [userData, setData] = useState({ userkaname: "", userkaemail: "", userkapassword: "" })
     console.log(userData, 'userData')
 
@@ -14,6 +18,8 @@ const Home = () => {
         if (userData.userkaname && userData.userkaemail && userData.userkapassword) {
             if(userData.userkapassword.length>=6){
                 alert('data submitted')
+                setData({ userkaname: "", userkaemail: "", userkapassword: "" })
+                route('/')
             }
             else{
                 alert('password should be long')
