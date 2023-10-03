@@ -1,3 +1,5 @@
+import './Footer.css';
+
 function Footer(props) {
 
     const { FootShop, FootCorporate, FootHelp } = props;
