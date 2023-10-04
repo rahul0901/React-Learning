@@ -9,14 +9,24 @@ function Header(props) {
 
     const [userKaData, setUserKaData] = useState({ userKaEmail: '', userKaPassword: '' })
 
+    console.log(userKaData, "-userdata")
+
     const handleOnChangeInput = (event) => {
-        setUserKaData({...userKaData, [event.target.name] : event.target.value});
+        setUserKaData({ ...userKaData, [event.target.name]: event.target.value });
     }
 
     const sendDataToBackend = (event) => {
         event.preventDefault()
-        if(userKaData.userKaEmail && userKaData.userKaPassword){
-            toast.success
+        if (userKaData.userKaEmail && userKaData.userKaPassword) {
+            if (userKaData.userKaPassword.length >= 6) {
+                alert('data submitted')
+            }
+            else{
+                alert('password toh bada rkh bacchi..')
+            }
+        }
+        else {
+            alert('fill all info..')
         }
     }
 
@@ -59,7 +69,7 @@ function Header(props) {
                                                             </div>
                                                             <div className="sigin-content-main-2">
                                                                 <p>Become a member — don’t miss out on deals, offers, discounts and bonus vouchers.</p>
-                                                                <form>
+                                                                <form onSubmit={sendDataToBackend}>
                                                                     <div className="sigin-form-email">
                                                                         <label>Email <span> *</span></label> <br />
                                                                         <input type="email" name="userKaEmail" onChange={handleOnChangeInput} id="" required /> <br />
@@ -68,9 +78,29 @@ function Header(props) {
                                                                         <label>Password <span> *</span></label> <br />
                                                                         <input type="password" name="userKaPassword" onChange={handleOnChangeInput} id="" required /> <br />
                                                                     </div>
+                                                                    <div className="sigin-content-main-3">
+                                                                        <div className="sigin-remember">
+                                                                            <input type="checkbox" name="" id="" /> <br />
+                                                                            <label>
+                                                                                Remember Me
+                                                                            </label>
+                                                                        </div>
+                                                                        <a>Forgot Password?</a>
+                                                                    </div>
+                                                                    <div className="sigin-content-main-4">
+                                                                        <div className="main-content-4-1">
+                                                                            <button type='submit'>Signin</button>
+                                                                        </div>
+                                                                        <div className="main-content-4-2">
+                                                                            <button>Become a member</button>
+                                                                        </div>
+                                                                        <div className="main-content-4-3">
+                                                                            <a>Membership info</a>
+                                                                        </div>
+                                                                    </div>
                                                                 </form>
                                                             </div>
-                                                            <div className="sigin-content-main-3">
+                                                            {/* <div className="sigin-content-main-3">
                                                                 <div className="sigin-remember">
                                                                     <input type="checkbox" name="" id="" /> <br />
                                                                     <label>
@@ -78,10 +108,10 @@ function Header(props) {
                                                                     </label>
                                                                 </div>
                                                                 <a>Forgot Password?</a>
-                                                            </div>
-                                                            <div className="sigin-content-main-4">
+                                                            </div> */}
+                                                            {/* <div className="sigin-content-main-4">
                                                                 <div className="main-content-4-1">
-                                                                    <button onSubmit={sendDataToBackend}>Signin</button>
+                                                                    <button type='submit'>Signin</button>
                                                                 </div>
                                                                 <div className="main-content-4-2">
                                                                     <button>Become a member</button>
@@ -89,7 +119,7 @@ function Header(props) {
                                                                 <div className="main-content-4-3">
                                                                     <a>Membership info</a>
                                                                 </div>
-                                                            </div>
+                                                            </div> */}
                                                         </div>
                                                     </div>
                                                 </div>
