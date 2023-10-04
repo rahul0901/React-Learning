@@ -1,8 +1,19 @@
+import { useState } from 'react';
 import './Header.css';
 import './HeaderMedia.css';
 function Header(props) {
 
     const { leftUl, RightUl, IClass, DownLeft, Hover11, Hover12, Hover13, Hover14, Hover21, Hover31, Hover32 } = props;
+
+    const [signIn, setSignIn] = useState(false);
+
+    const openSignin = () => {
+        setSignIn(true);
+    }
+
+    const closeSignin = () => {
+        setSignIn(false);
+    }
 
     return (
         <>
@@ -22,7 +33,59 @@ function Header(props) {
                             </div>
                             <div className="nav-up-3">
                                 {RightUl.map((item, i) => (
-                                    <a href="#" key={i}>{IClass[i]} <span>{item}</span> </a>
+                                    <a href="#" key={i}>{IClass[i]} <span>{item}</span>
+                                        <div className="sign-in">
+                                            <button onClick={openSignin}>{item}</button>
+                                            {signIn && (
+                                                <div className="signin-parent">
+                                                    <div className="sigin-child">
+                                                        <div className="sigin-content-main">
+                                                            <div className="sigin-content-main-1">
+                                                                <h2>Sign In</h2>
+                                                                <i onClick={closeSignin} class="fa-solid fa-xmark fa-2xl"></i>
+                                                            </div>
+                                                            <div className="sigin-content-main-2">
+                                                                <p>Become a member — don’t miss out on deals, offers, discounts and bonus vouchers.</p>
+                                                                <form>
+                                                                    <div className="sigin-form-email">
+                                                                        <label>Email <span> *</span></label> <br />
+                                                                        <input type="email" name="" id="" required /> <br />
+                                                                    </div>
+                                                                    <div className="sigin-form-pass">
+                                                                        <label>Password <span> *</span></label> <br />
+                                                                        <input type="password" name="" id="" required /> <br />
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                            <div className="sigin-content-main-3">
+                                                                <div className="sigin-remember">
+                                                                    <input type="checkbox" name="" id="" /> <br />
+                                                                    <label>
+                                                                        Remember Me
+                                                                    </label>
+                                                                </div>
+                                                                <a>Forgot Password?</a>
+                                                            </div>
+                                                            <div className="sigin-content-main-4">
+                                                                <div className="main-content-4-1">
+                                                                    <button>Signin</button>
+                                                                </div>
+                                                                <div className="main-content-4-2">
+                                                                    <button>Become a member</button>
+                                                                </div>
+                                                                <div className="main-content-4-3">
+                                                                    <a>Membership info</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            )}
+                                            <p>My account</p>
+                                            <p>Membership info</p>
+                                            <p>Not a member yet? Join here!</p>
+                                        </div>
+                                    </a>
                                 ))}
                             </div>
                         </div>
