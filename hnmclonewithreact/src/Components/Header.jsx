@@ -2,7 +2,7 @@ import './Header.css';
 import './HeaderMedia.css';
 function Header(props) {
 
-    const { leftUl, RightUl, IClass, DownLeft } = props;
+    const { leftUl, RightUl, IClass, DownLeft, Hover11, Hover12, Hover13, Hover14, Hover21, Hover31, Hover32 } = props;
 
     return (
         <>
@@ -31,9 +31,61 @@ function Header(props) {
                                 {DownLeft.map((item, i) => (
                                     <a href="#" key={i} className='hoverable-link'>{item}
                                         <div className="hover-content">
-                                            <div className="1">1</div>
-                                            <div className="2">2</div>
-                                            <div className="3">3</div>
+                                            <div className="tp">
+                                                <div className="ladies-one">
+                                                    <div className="ladies-one-one">
+                                                        {Hover11.map((item, index) => (
+                                                            <div key={index}>
+                                                                {item}
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                    <div className="ladies-one-two">
+                                                        {Hover12.map((item, index) => (
+                                                            <div key={index}>
+                                                                {item}
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                    <div className="ladies-one-three">
+                                                        {Hover13.map((item, index) => (
+                                                            <div key={index}>
+                                                                {item}
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                    <div className="ladies-one-four">
+                                                        {Hover14.map((item, index) => (
+                                                            <div key={index}>
+                                                                {item}
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                                <div className="ladies-two">
+                                                    {Hover21.map((item, index) => (
+                                                        <div key={index}>
+                                                            {item}
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                                <div className="ladies-three">
+                                                    <div className="ladies-three-1">
+                                                        {Hover31.map((item, index) => (
+                                                            <div key={index}>
+                                                                {item}
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                    <div className="ladies-three-2">
+                                                        {Hover32.map((item, index) => (
+                                                            <div key={index}>
+                                                                {item}
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </a>
 
