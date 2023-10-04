@@ -160,13 +160,13 @@
     border: 1px solid;
 }
 
-.sigin-content-main{
+.sigin-content-main {
     width: 100%;
     height: 100%;
     /* padding: 20px; */
 }
 
-.sigin-content-main-1{
+.sigin-content-main-1 {
     width: 100%;
     height: 28px;
     display: flex;
@@ -174,14 +174,14 @@
     /* border: 1px solid red; */
 }
 
-.sigin-content-main-1 h2{
+.sigin-content-main-1 h2 {
     width: 80%;
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.sigin-content-main-1 i{
+.sigin-content-main-1 i {
     width: 20%;
     height: 100%;
     display: flex;
@@ -189,12 +189,12 @@
     justify-content: flex-end;
 }
 
-.sigin-content-main-2 p{
+.sigin-content-main-2 p {
     margin-top: 16px;
     margin-bottom: 32px;
 }
 
-.sigin-form-email{
+.sigin-form-email {
     /* border: 1px solid red; */
     width: 100%;
     height: 100%;
@@ -202,17 +202,17 @@
     margin-bottom: 8px;
 }
 
-.sigin-form-email span{
+.sigin-form-email span {
     color: red;
 }
 
-.sigin-form-email input{
+.sigin-form-email input {
     width: 100%;
     height: 46px;
     padding: 8px;
 }
 
-.sigin-form-pass{
+.sigin-form-pass {
     /* border: 1px solid red; */
     width: 100%;
     height: 100%;
@@ -220,17 +220,17 @@
     margin-bottom: 8px;
 }
 
-.sigin-form-pass span{
+.sigin-form-pass span {
     color: red;
 }
 
-.sigin-form-pass input{
+.sigin-form-pass input {
     width: 100%;
     height: 46px;
     padding: 8px;
 }
 
-.sigin-content-main-3{
+.sigin-content-main-3 {
     width: 100%;
     height: 28px;
     display: flex;
@@ -241,21 +241,21 @@
     margin-bottom: 24px;
 }
 
-.sigin-remember{
+.sigin-remember {
     display: flex;
 }
 
-.sigin-content-main-3 a{
+.sigin-content-main-3 a {
     text-decoration-line: underline;
     text-align: end;
 }
 
-.main-content-4-2 button{
+.main-content-4-2 button {
     background-color: white;
     color: #222222;
 }
 
-.main-content-4-3 a{
+.main-content-4-3 a {
     text-decoration-line: underline;
     color: grey;
 }
@@ -298,7 +298,6 @@
     color: #222222;
     /* border: 1px solid royalblue; */
 }
-
 
 .hover-content {
     display: none;
@@ -452,9 +451,6 @@
     margin-bottom: 8px;
 }
 
-/* ........... */
-
-
 .ladies-three-1 {
     padding-bottom: 32px;
     margin: 0px 32px;
@@ -529,7 +525,3 @@
     border: none;
     outline: none;
 }
-
-
-
-/* HM Sans Regular, 'HMSansHebrew-Regular','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','Osaka','メイリオ','Meiryo','MS Pゴシック','MS PGothic', */

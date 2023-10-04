@@ -7,6 +7,19 @@ function Header(props) {
 
     const [signIn, setSignIn] = useState(false);
 
+    const [userKaData, setUserKaData] = useState({ userKaEmail: '', userKaPassword: '' })
+
+    const handleOnChangeInput = (event) => {
+        setUserKaData({...userKaData, [event.target.name] : event.target.value});
+    }
+
+    const sendDataToBackend = (event) => {
+        event.preventDefault()
+        if(userKaData.userKaEmail && userKaData.userKaPassword){
+            toast.success
+        }
+    }
+
     const openSignin = () => {
         setSignIn(true);
     }
@@ -49,11 +62,11 @@ function Header(props) {
                                                                 <form>
                                                                     <div className="sigin-form-email">
                                                                         <label>Email <span> *</span></label> <br />
-                                                                        <input type="email" name="" id="" required /> <br />
+                                                                        <input type="email" name="userKaEmail" onChange={handleOnChangeInput} id="" required /> <br />
                                                                     </div>
                                                                     <div className="sigin-form-pass">
                                                                         <label>Password <span> *</span></label> <br />
-                                                                        <input type="password" name="" id="" required /> <br />
+                                                                        <input type="password" name="userKaPassword" onChange={handleOnChangeInput} id="" required /> <br />
                                                                     </div>
                                                                 </form>
                                                             </div>
@@ -68,7 +81,7 @@ function Header(props) {
                                                             </div>
                                                             <div className="sigin-content-main-4">
                                                                 <div className="main-content-4-1">
-                                                                    <button>Signin</button>
+                                                                    <button onSubmit={sendDataToBackend}>Signin</button>
                                                                 </div>
                                                                 <div className="main-content-4-2">
                                                                     <button>Become a member</button>
