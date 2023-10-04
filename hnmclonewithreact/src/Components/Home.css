@@ -33,12 +33,25 @@
     width: 100%;
     height: 640px;
     margin-top: 24px;
-    background-image: url('https://image.hm.com/content/dam/global_campaigns/season_08/ladies/2018/2018-3x2-teaser-2-studio-aw-2023.jpg?imwidth=1260');
+    /* background: linear-gradient(180deg,transparent 50%,rgba(0,0,0,.35)); */
+    background-image: url('https://image.hm.com/content/dam/global_campaigns/season_08/ladies/2018/2018-3x2-teaser-2-studio-aw-2023.jpg?imwidth=1260') ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+#body-content-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.35));
+    z-index: 1; /* Adjust the z-index to control the stacking order */
 }
 
 .bc-1-up-text {
@@ -69,6 +82,19 @@
     background-position: center;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+
+#body-content-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.35));
+    z-index: 1; /* Adjust the z-index to control the stacking order */
 }
 
 .bc-2-up-text {
@@ -98,6 +124,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    position: relative;
+}
+
+
+#body-content-3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.35));
+    z-index: 1; /* Adjust the z-index to control the stacking order */
 }
 
 #body-content-3>h3 {
