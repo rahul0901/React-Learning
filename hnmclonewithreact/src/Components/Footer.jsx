@@ -2,7 +2,7 @@ import './Footer.css';
 
 function Footer(props) {
 
-    const { FootShop, FootCorporate, FootHelp } = props;
+    const { FootShop, FootCorporate, FootHelp, FootSocials } = props;
 
     return (
         <>
@@ -35,11 +35,26 @@ function Footer(props) {
                         </div>
                         <div className="child-up-div-four">
                             <p>Sign up now and be the first to know about exclusive offers, latest fashion news & style tips!</p>
-                            <a href="#">Read More <span>-&gt</span></a>
+                            <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
                     </div>
                     <div className="foot-child-down">
-                        down
+                        <div className="foot-child-down-1">
+                            {FootSocials.map((item, index)=>(
+                                <div key={index}>
+                                    {item}
+                                </div>
+                            ))}
+                        </div>
+                        <div className="foot-child-down-2">
+                            2
+                        </div>
+                        <div className="foot-child-down-3">
+                            3
+                        </div>
+                        <div className="foot-child-down-4">
+                            4
+                        </div>
                     </div>
                 </div>
             </div>

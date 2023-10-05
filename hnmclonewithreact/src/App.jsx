@@ -32,7 +32,7 @@ function App() {
           "Legal & Privacy",
           "Contact",
           "Report a scam", "Cookie Notice",
-          "Cookie Settings"]} />
+          "Cookie Settings"]} FootSocials={[<i class="fa-brands fa-facebook"></i>, <i class="fa-brands fa-x-twitter"></i>, <i class="fa-brands fa-instagram"></i>, <i class="fa-brands fa-youtube"></i>, <i class="fa-brands fa-pinterest"></i>]} />
     </div>
   );
 }

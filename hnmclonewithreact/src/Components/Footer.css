@@ -15,6 +15,7 @@
     border: 1px solid black;
     background-color: aliceblue;
     padding: 64px 32px;
+    background-color: #e4e4e4;
 }
 
 .foot-parent {
@@ -24,7 +25,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0px 138px;
+    padding: 0px 8%;
 }
 
 .foot-child-up {
@@ -42,59 +43,167 @@
 .child-up-div-one>p {
     display: flex;
     align-items: flex-start;
-    font-family: "HM Sans Semi Bold", 'HMSansHebrew-SemiBold', sans-serif;
+    font-family: 'HM Sans Regular', 'HMSansHebrew-Regular', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 13px;
     line-height: 16px;
     color: #222222;
+    text-transform: uppercase;
+    margin-bottom: 16px;
 }
 
 .child-up-div-one>a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    color: red;
+    font-family: 'HM Sans Regular', 'HMSansHebrew-Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #222222;
+    margin-bottom: 8px;
 }
 
 .child-up-div-two>p {
     display: flex;
     align-items: flex-start;
+    font-family: 'HM Sans Regular', 'HMSansHebrew-Regular', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #222222;
+    text-transform: uppercase;
+    margin-bottom: 16px;
 }
 
 .child-up-div-two>a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    color: red;
+    font-family: 'HM Sans Regular', 'HMSansHebrew-Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #222222;
+    margin-bottom: 8px;
 }
 
 .child-up-div-three>p {
     display: flex;
     align-items: flex-start;
+    font-family: 'HM Sans Regular', 'HMSansHebrew-Regular', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #222222;
+    text-transform: uppercase;
+    margin-bottom: 16px;
 }
 
 .child-up-div-three>a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    color: red;
+    font-family: 'HM Sans Regular', 'HMSansHebrew-Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #222222;
+    margin-bottom: 8px;
 }
 
 .child-up-div-four {
     display: flex;
-    align-items: flex-start;
+    flex-wrap: wrap;
     flex-direction: column;
     border: 1px solid green;
     padding-bottom: 32px;
 }
 
 .child-up-div-four>p {
-    align-items: left;
+    text-align: left;
+    font-family: 'HM Sans Regular', 'HMSansHebrew-Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #222222;
+    margin-bottom: 30px;
+}
+
+.child-up-div-four>a {
+    text-align: left;
+    font-family: 'HM Sans Regular', 'HMSansHebrew-Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #222222;
+    text-decoration: none;
+}
+
+.child-up-div-four>a>i {
+    margin-left: 10px;
 }
 
 .foot-child-down {
     width: 100%;
-    height: 181px;
+    height: 200px;
     border: 1px solid black;
+}
+
+.foot-child-down>div {
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+}
+
+.foot-child-down-1 {
+    height: 48px;
+    margin: 16px 0px 16px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-child-down-1>div {
+    width: 48px;
+    height: 48px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-child-down-1>div>i {
+    width: 18px;
+    height: 18px;
+}
+
+.foot-child-down-2 {
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-child-down-3 {
+    height: 48px;
+    margin: 32px 0px 4px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-child-down-4 {
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

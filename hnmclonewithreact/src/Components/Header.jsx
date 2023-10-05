@@ -20,8 +20,9 @@ function Header(props) {
         if (userKaData.userKaEmail && userKaData.userKaPassword) {
             if (userKaData.userKaPassword.length >= 6) {
                 alert('data submitted')
+                setUserKaData({ userKaEmail: '', userKaPassword: '' });
             }
-            else{
+            else {
                 alert('password toh bada rkh bacchi..')
             }
         }
@@ -72,11 +73,11 @@ function Header(props) {
                                                                 <form onSubmit={sendDataToBackend}>
                                                                     <div className="sigin-form-email">
                                                                         <label>Email <span> *</span></label> <br />
-                                                                        <input type="email" name="userKaEmail" onChange={handleOnChangeInput} id="" required /> <br />
+                                                                        <input type="email" name="userKaEmail" onChange={handleOnChangeInput} id="" value={userKaData.userKaEmail} required /> <br />
                                                                     </div>
                                                                     <div className="sigin-form-pass">
                                                                         <label>Password <span> *</span></label> <br />
-                                                                        <input type="password" name="userKaPassword" onChange={handleOnChangeInput} id="" required /> <br />
+                                                                        <input type="password" name="userKaPassword" onChange={handleOnChangeInput} id="" value={userKaData.userKaPassword} required /> <br />
                                                                     </div>
                                                                     <div className="sigin-content-main-3">
                                                                         <div className="sigin-remember">
