@@ -19,6 +19,8 @@ const SingleProduct = () => {
         getData()
     },[id])
 
+    // above is sigle depenedency means jab id ka value change hoga aur page refresh hoga tabhi ueeffect render hoga..
+
     return (
         <>
             <div>SingleProduct  - {id}</div>
