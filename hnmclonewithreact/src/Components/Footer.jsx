@@ -40,20 +40,20 @@ function Footer(props) {
                     </div>
                     <div className="foot-child-down">
                         <div className="foot-child-down-1">
-                            {FootSocials.map((item, index)=>(
+                            {FootSocials.map((item, index) => (
                                 <div key={index}>
                                     {item}
                                 </div>
                             ))}
                         </div>
                         <div className="foot-child-down-2">
-                            2
+                            <p>The content of this site is copyright-protected and is the property of H & M Hennes & Mauritz AB.</p>
                         </div>
                         <div className="foot-child-down-3">
-                            3
+                            <img src="https://www2.hm.com/content/dam/courtesypageimages/down_for_maintenance.jpeg" alt="" width="100%" height="100%" />
                         </div>
                         <div className="foot-child-down-4">
-                            4
+                            <p>INDIA | Rs.</p>
                         </div>
                     </div>
                 </div>
