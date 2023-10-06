@@ -9,10 +9,7 @@ const Home = (props) => {
                 <div id="home">
                     <div className="firstul">
                         {HomeFirstUl.map((singleItems) => (
-                            <a href="#">
-                                <a href="#">{singleItems}</a>
-                            </a>
-
+                            <a href="#">{singleItems}</a>
                         ))}
                     </div>
                     <div id="body-content-1">

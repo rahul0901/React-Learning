@@ -29,7 +29,7 @@ function Header(props) {
             }
         }
         else {
-            alert('fill all info..')
+            toast.error('fill all info..')
         }
     }
 
