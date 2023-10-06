@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Header.css';
 import './HeaderMedia.css';
+import toast from 'react-hot-toast';
 function Header(props) {
 
     const { leftUl, RightUl, IClass, DownLeft, Hover11, Hover12, Hover13, Hover14, Hover21, Hover31, Hover32 } = props;
@@ -19,11 +20,12 @@ function Header(props) {
         event.preventDefault()
         if (userKaData.userKaEmail && userKaData.userKaPassword) {
             if (userKaData.userKaPassword.length >= 6) {
-                alert('data submitted')
+                // alert('data submitted')
+                toast.success('Hurry! login successful..')
                 setUserKaData({ userKaEmail: '', userKaPassword: '' });
             }
             else {
-                alert('password toh bada rkh bacchi..')
+                toast.error('password toh bada rkh bacchi..')
             }
         }
         else {
@@ -128,6 +130,19 @@ function Header(props) {
                                             <p>My account</p>
                                             <p>Membership info</p>
                                             <p>Not a member yet? Join here!</p>
+                                        </div>
+                                        <div className="shopping">
+                                            <p>Your shopping bag is empty</p>
+                                            <div className="shopping-1">
+                                                <div className="shopping-11">
+                                                    <p>Order value</p>
+                                                    <p>Rs. 0.00</p>
+                                                </div>
+                                                <div className="shopping-12">
+                                                    <p>Total</p>
+                                                    <p>Rs. 0.00</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </a>
                                 ))}
