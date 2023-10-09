@@ -1,0 +1,54 @@
+@media screen and ((min-width:836px) and (max-width:1000px)) {
+    .head-child{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:835px) {
+    .head-child{
+        width: 100%;
+    }
+
+    .head-1{
+        width: 64%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: green;
+    }
+
+    .head-1 > img{
+        width: 20%;
+        height: 100%;
+        border: 1px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .head-2{
+        display: none;
+    }
+
+    .head-3{
+        width: 12%;
+        height: 100%; 
+        color: #ffffff;       
+    }
+
+    .head-4{
+        width: 12%;
+        height: 100%; 
+        color: #ffffff;       
+    }
+
+    .head-5{
+        width: 12%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+    }
+}

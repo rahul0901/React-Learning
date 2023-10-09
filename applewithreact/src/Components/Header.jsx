@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import './MediaHeader.css'
 import logo from './open_graph_logo-removebg-preview.png';
 
 const Header = (props) => {
@@ -14,17 +15,20 @@ const Header = (props) => {
                             <img src={logo} alt="" />
                         </div>
                         <div className="head-2">
-                            {navUL.map((item, index)=>(
+                            {navUL.map((item, index) => (
                                 <a key={index}>
                                     {item}
                                 </a>
                             ))}
                         </div>
                         <div className="head-3">
-                            3
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div className="head-4">
-                            4
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div className="head-5">
+                            <i class="fa-solid fa-bars"></i>
                         </div>
                     </div>
                 </div>
