@@ -83,12 +83,42 @@
     color: black;
     background-color: #ffffff;
     border: 1px solid black;
-    padding: 40px 22px;
+    padding: 40px 22px 84px 22px;
 }
 
 .head-2>a:hover .head-2-hover-contents{
     display: block;
 }
+
+.hover-contents-child{
+    width: 85%;
+    /* height: 100%; */
+    margin: auto;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.hover-contents-1, .hover-contents-2, .hover-contents-3{
+    width:33%;
+    height: 100%;
+    border: 1px solid green;
+    /* flex-direction: column; */
+}
+
+.hover-contents-1 > h2, .hover-contents-2 > h2, .hover-contents-3 > h2{
+    margin-bottom: 10px;
+}
+
+.hover-contents-1 > a, .hover-contents-2 > a, .hover-contents-3 > a{
+    display: flex;
+    flex-direction: column;
+    padding: 7px 0px;
+    border: 1px solid black;
+
+}
+
 
 .head-5 {
     display: none;

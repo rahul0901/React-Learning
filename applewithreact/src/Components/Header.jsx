@@ -5,7 +5,7 @@ import logo from './open_graph_logo-removebg-preview.png';
 
 const Header = (props) => {
 
-    const { navUL } = props;
+    const { navUL, HeadHover1, HeadHover2, HeadHover3 } = props;
     return (
         <>
             <div className="screen">
@@ -19,7 +19,26 @@ const Header = (props) => {
                                 <a key={index}>
                                     {item}
                                     <div className="head-2-hover-contents">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptate veritatis voluptatibus.
+                                        <div className="hover-contents-child">
+                                            <div className="hover-contents-1">
+                                                <h2>Shop</h2>
+                                                {HeadHover1.map((item, index) => (
+                                                    <a key={index}> {item} </a>
+                                                ))}
+                                            </div>
+                                            <div className="hover-contents-2">
+                                                <h2>Quick Links</h2>
+                                                {HeadHover2.map((item, index) => (
+                                                    <a key={index}>{item}</a>
+                                                ))}
+                                            </div>
+                                            <div className="hover-contents-3">
+                                                <h2>Shop Special Stores</h2>
+                                                {HeadHover3.map((item, index)=>(
+                                                    <a key={index}>{item}</a>
+                                                ))}
+                                            </div>
+                                        </div>
                                     </div>
                                 </a>
                             ))}
