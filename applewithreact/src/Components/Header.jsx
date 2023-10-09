@@ -18,6 +18,9 @@ const Header = (props) => {
                             {navUL.map((item, index) => (
                                 <a key={index}>
                                     {item}
+                                    <div className="head-2-hover-contents">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptate veritatis voluptatibus.
+                                    </div>
                                 </a>
                             ))}
                         </div>
