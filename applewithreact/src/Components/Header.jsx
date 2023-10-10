@@ -2,21 +2,33 @@ import React, { useState } from 'react';
 import './Header.css';
 import './MediaHeader.css'
 import logo from './open_graph_logo-removebg-preview.png';
+import toast from 'react-hot-toast';
 
 const Header = (props) => {
 
     const { navUL, HeadHover1, HeadHover2, HeadHover3 } = props;
     const [openShop, setShop] = useState(false);
     const [formstatus, setFormStatus] = useState(false);
-    const [userData, setData] = useState({userKaName:'', userKaEmail:'', userKaPassword:''})
+    const [userData, setData] = useState({ userKaName: '', userKaEmail: '', userKaPassword: '' })
 
     const handleFormData = (event) => {
-        setData({...userData, [event.target.name]: event.target.value});
+        setData({ ...userData,[event.target.name]: event.target.value });
     }
 
-    const submitForm =  async (event) => {
+    const submitForm = (event) => {
         event.preventDefault()
-        const jsonData = await  
+        if (userData.userKaName && userData.userKaEmail && userData.userKaPassword){
+            if (userData.userKaPassword.length >= 6) {
+                toast.success('user ban gaya!')
+                setData({userKaName: '', userKaEmail: '', userKaPassword: ''})
+            }
+            else {
+                toast.error('password to bada rakh bachii')
+            }
+        }
+        else {
+            toast.error('fill all info..')
+        }
     }
 
     const openShopping = () => {
@@ -78,16 +90,16 @@ const Header = (props) => {
                                 <p onClick={handleForm}>Sign in</p>
                                 {formstatus && <div className='form-parent'>
                                     <div className="form-child">
-                                        <form onClick={submitForm}>
+                                        <form onSubmit={submitForm}>
                                             <label>Name: </label> <br />
-                                            <input type="text" name='userKaName' onChange={handleFormData} /> <br />
-                                            
+                                            <input type="text" name='userKaName' onChange={handleFormData}  value={userData.userKaName} /> <br />
+
                                             <label>Email: </label> <br />
-                                            <input type="email" name='userKaEmail' onChange={handleFormData} /> <br />
-                                            
+                                            <input type="email" name='userKaEmail' onChange={handleFormData}  value={userData.userKaEmail} /> <br />
+
                                             <label>Password: </label> <br />
-                                            <input type="password" name='userKaPassword' onChange={handleFormData} /> <br />
-                                            <input type="submit" value="" />
+                                            <input type="password" name='userKaPassword' onChange={handleFormData}  value={userData.userKaPassword} /> <br />
+                                            <button type='submit'>Submit</button>
 
                                         </form>
                                         <button onClick={closeform}>X</button>
