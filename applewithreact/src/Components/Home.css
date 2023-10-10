@@ -169,7 +169,6 @@ https://www.apple.com/v/home/be/images/heroes/iphone-15/hero_iphone15_announce__
     font-size: 14px;
     line-height: 19px;
     color: #2997ff;
-    /* margin-top: 13px; */
 
 }
 
@@ -278,12 +277,47 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
     padding: 47px 0px 0px 0px;
     color: #f5f5f7;
     text-align: center;
+    border: 1px solid red;
+}
+
+.bc-4-text-1> h3{
+    width: 100%;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
 }
 
 .bc-4-text-1> h3>img{
     height: 100%;
+    margin-left: 4px;
 }
 
+.bc-4-two-cta-1{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.bc-4-two-cta-1>a {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 29px;
+    color: #2997ff;
+}
+
+.bc-4-two-cta-1>a>i {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #2997ff;
+}
+/* -------------------------- */
 .bc-42 {
     background-image: url('https://www.apple.com/in/home/promos/apple-watch-ultra-2/images/promo_apple_watch_ultra2_order__dyxqj5ia98om_large_2x.jpg');
     background-position: center;
@@ -292,7 +326,66 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
 }
 
 .bc-4-text-2 {
+    width: 100%;
+    height: 139px;
+    padding: 47px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 29px;
+    color: #1d1d1f;
 }
+
+.bc-4-text-2> h2{
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.bc-4-text-2> h2> img{
+    height: 100%;
+}
+
+
+.bc-4-text-2> h3{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 29px;
+    color: #1d1d1f;
+    margin-top: 10px;
+}
+
+.bc-4-two-cta-2{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.bc-4-two-cta-2>a {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 29px;
+    color: #2997ff;
+}
+
+.bc-4-two-cta-2>a>i {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #2997ff;
+}
+
+/* -------------------------- */
+
 
 .bc-43 {
     background-image: url('https://www.apple.com/v/home/be/images/promos/macbook-air-15/promo_macbook_air_15_midnight__3zojl1nanrme_large_2x.jpg');
@@ -302,7 +395,65 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
 }
 
 .bc-4-text-3 {
+    width: 100%;
+    height: 139px;
+    padding: 47px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 29px;
+    color: #1d1d1f;
 }
+
+.bc-4-text-3> h2{
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.bc-4-text-3> h2> img{
+    height: 100%;
+}
+
+
+.bc-4-text-3> h3{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 29px;
+    color: #1d1d1f;
+    margin-top: 10px;
+}
+
+.bc-4-two-cta-3{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.bc-4-two-cta-3>a {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 29px;
+    color: #2997ff;
+}
+
+.bc-4-two-cta-3>a>i {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #2997ff;
+}
+
+/* -------------------------- */
 
 
 .bc-44 {
@@ -313,7 +464,66 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
 }
 
 .bc-4-text-4 {
+    width: 100%;
+    height: 139px;
+    padding: 47px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 29px;
+    color: #f5f5f7;
 }
+
+.bc-4-text-4> h2{
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.bc-4-text-4> h2> img{
+    height: 100%;
+}
+
+
+.bc-4-text-4> h3{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 29px;
+    /* color: #f5f5f7; */
+    margin-top: 10px;
+}
+
+.bc-4-two-cta-4{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.bc-4-two-cta-4>a {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 29px;
+    color: #2997ff;
+}
+
+.bc-4-two-cta-4>a>i {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #2997ff;
+}
+
+/* -------------------------- */
+
 
 .bc-45 {
     background-image: url('https://www.apple.com/v/home/be/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_large_2x.jpg');
@@ -323,7 +533,14 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
 }
 
 .bc-4-text-5 {
+    width: 100%;
+    padding: 47px 0px 0px 0px;
+    color: #f5f5f7;
+    text-align: center;
+    border: 1px solid red;
 }
+
+/* -------------------------- */
 
 
 .bc-46 {
@@ -334,4 +551,9 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
 }
 
 .bc-4-text-6 {
+    width: 100%;
+    padding: 47px 0px 0px 0px;
+    color: #f5f5f7;
+    text-align: center;
+    border: 1px solid red;
 }

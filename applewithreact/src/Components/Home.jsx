@@ -57,7 +57,7 @@ const Home = () => {
           </div>
           <div className="bc-42">
             <div className="bc-4-text-2">
-              <h2><img src="https://www.apple.com/v/home/be/images/logos/apple-watch-series-9/hero_logo_apple_watch_series_9__eg5xcrxghuaa_small_2x.png" alt="" /></h2>
+              <h2><img src="https://www.apple.com/v/home/be/images/logos/apple-watch-ultra-2/promo_logo_apple_watch_ultra2__ggg2x39rsvqu_large_2x.png" alt="" /></h2>
               <h3>Smarter. Brighter. Mightier.</h3>
               <div className="bc-4-two-cta-2">
                 <a>Learn more <i class="fa-solid fa-greater-than"></i></a>
@@ -67,8 +67,8 @@ const Home = () => {
           </div>
           <div className="bc-43">
             <div className="bc-4-text-3">
-              <h2><img src="https://www.apple.com/v/home/be/images/logos/apple-watch-series-9/hero_logo_apple_watch_series_9__eg5xcrxghuaa_small_2x.png" alt="" /></h2>
-              <h3>Smarter. Brighter. Mightier.</h3>
+              <h2>MacBook Air 15”</h2>
+              <h3>Impressively big. Impossibly thin.</h3>
               <div className="bc-4-two-cta-3">
                 <a>Learn more <i class="fa-solid fa-greater-than"></i></a>
                 <a>Buy <i class="fa-solid fa-greater-than"></i></a>
@@ -77,8 +77,8 @@ const Home = () => {
           </div>
           <div className="bc-44">
             <div className="bc-4-text-4">
-              <h2><img src="https://www.apple.com/v/home/be/images/logos/apple-watch-series-9/hero_logo_apple_watch_series_9__eg5xcrxghuaa_small_2x.png" alt="" /></h2>
-              <h3>Smarter. Brighter. Mightier.</h3>
+              <h2>AirPods Pro</h2>
+              <h3>Adaptive Audio. Now playing.</h3>
               <div className="bc-4-two-cta-4">
                 <a>Learn more <i class="fa-solid fa-greater-than"></i></a>
                 <a>Buy <i class="fa-solid fa-greater-than"></i></a>
