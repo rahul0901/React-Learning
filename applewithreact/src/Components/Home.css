@@ -5,10 +5,29 @@
     font-family: "SF Pro";
 }
 
+.w-100 {
+    width: 100%;
+}
+
+.h-580 {
+    height: 580px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-img-css {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .home-screen {
     width: 100%;
     height: 100%;
-    /* border: 1px solid green; */
     margin-top: 46px;
 }
 
@@ -17,9 +36,6 @@
     height: 44px;
     background-color: #1d1d1f;
     color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -45,14 +61,10 @@
     margin-left: 6px;
 }
 
+/* --------------------------------------------------------------------- */
+
 .body-content-1 {
-    width: 100%;
-    height: 580px;
-    /* border: 1px solid red; */
     background-image: url('https://www.apple.com/v/home/be/images/heroes/iphone-15-pro/hero_iphone15pro__i70z9oz3hj2i_large_2x.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     z-index: 1;
 }
 
@@ -60,9 +72,6 @@
     width: 100%;
     height: 139px;
     padding: 47px 0px 0px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     font-weight: 600;
     font-style: normal;
@@ -101,36 +110,20 @@
     font-size: 14px;
     line-height: 19px;
     color: #2997ff;
-    /* margin-top: 13px; */
-
 }
 
-/* ----------------------- */
+/* --------------------------------------------------------------------- */
 
 .body-content-2 {
-    width: 100%;
-    height: 580px;
-    /* border: 1px solid red; */
     background-image: url('https://www.apple.com/v/home/be/images/heroes/iphone-15/hero_iphone15_announce__uuemlcwczn6u_large_2x.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     margin: 10px 0px;
     z-index: 2;
 }
-
-/* https://www.apple.com/v/home/be/images/heroes/iphone-15/hero_iphone15_announce__uuemlcwczn6u_large_2x.jpg
-
-https://www.apple.com/v/home/be/images/heroes/iphone-15/hero_iphone15_announce__uuemlcwczn6u_small_2x.jpg
-*/
 
 .bc-2-text {
     width: 100%;
     height: 139px;
     padding: 47px 0px 0px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     font-weight: 600;
     font-style: normal;
@@ -169,37 +162,20 @@ https://www.apple.com/v/home/be/images/heroes/iphone-15/hero_iphone15_announce__
     font-size: 14px;
     line-height: 19px;
     color: #2997ff;
-
 }
 
-/* ----------------------------- */
+/* --------------------------------------------------------------------- */
 
 .body-content-3 {
-    width: 100%;
-    height: 580px;
-    /* border: 1px solid red; */
     background-image: url('https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watch_series_9_order__d0fi9mb84dci_large_2x.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     margin: 10px 0px;
     z-index: 3;
 }
 
-/* https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watch_series_9_order__d0fi9mb84dci_large_2x.jpg 
-
-https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watch_series_9_order__d0fi9mb84dci_medium_2x.jpg
-*/
-
 .bc-3-text {
     width: 100%;
-    /* height: 139px; */
     padding: 47px 0px 0px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    /* border: 5px solid red; */
 }
 
 .bc-3-text>h2 {
@@ -210,7 +186,6 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
 }
 
 .bc-3-text>h2>img {
-    /* width: 100%; */
     height: 100%;
 }
 
@@ -244,10 +219,9 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
     font-size: 14px;
     line-height: 19px;
     color: #2997ff;
-    /* margin-top: 13px; */
 }
 
-/* ...................... */
+/* ...................................................................... */
 
 .body-content-4 {
     width: 100%;
@@ -265,11 +239,10 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
     height: 580px;
 }
 
+/* ...................................................................... */
+
 .bc-41 {
     background-image: url('https://www.apple.com/in/home/promos/ipad-pro/images/promo_ipadpro_refresh__evi9utuixwuq_large_2x.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .bc-4-text-1 {
@@ -280,25 +253,19 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
     border: 1px solid red;
 }
 
-.bc-4-text-1> h3{
+.bc-4-text-1>h3 {
     width: 100%;
     height: 37px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: 1px solid red;
 }
 
-.bc-4-text-1> h3>img{
+.bc-4-text-1>h3>img {
     height: 100%;
     margin-left: 4px;
 }
 
-.bc-4-two-cta-1{
+.bc-4-two-cta-1 {
     margin-top: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 35px;
 }
 
@@ -317,21 +284,17 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
     line-height: 19px;
     color: #2997ff;
 }
-/* -------------------------- */
+
+/* ...................................................................... */
+
 .bc-42 {
     background-image: url('https://www.apple.com/in/home/promos/apple-watch-ultra-2/images/promo_apple_watch_ultra2_order__dyxqj5ia98om_large_2x.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .bc-4-text-2 {
     width: 100%;
     height: 139px;
     padding: 47px 0px 0px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     font-weight: 600;
     font-style: normal;
@@ -340,19 +303,19 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
     color: #1d1d1f;
 }
 
-.bc-4-text-2> h2{
+.bc-4-text-2>h2 {
     width: 100%;
     height: 52px;
     text-align: center;
     border: 1px solid red;
 }
 
-.bc-4-text-2> h2> img{
+.bc-4-text-2>h2>img {
     height: 100%;
 }
 
 
-.bc-4-text-2> h3{
+.bc-4-text-2>h3 {
     font-weight: 400;
     font-style: normal;
     font-size: 21px;
@@ -361,7 +324,7 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
     margin-top: 10px;
 }
 
-.bc-4-two-cta-2{
+.bc-4-two-cta-2 {
     margin-top: 12px;
     display: flex;
     align-items: center;
@@ -384,23 +347,16 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
     color: #2997ff;
 }
 
-/* -------------------------- */
-
+/* ...................................................................... */
 
 .bc-43 {
     background-image: url('https://www.apple.com/v/home/be/images/promos/macbook-air-15/promo_macbook_air_15_midnight__3zojl1nanrme_large_2x.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .bc-4-text-3 {
     width: 100%;
     height: 139px;
     padding: 47px 0px 0px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     font-weight: 600;
     font-style: normal;
@@ -409,19 +365,19 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
     color: #1d1d1f;
 }
 
-.bc-4-text-3> h2{
+.bc-4-text-3>h2 {
     width: 100%;
     height: 52px;
     text-align: center;
     border: 1px solid red;
 }
 
-.bc-4-text-3> h2> img{
+.bc-4-text-3>h2>img {
     height: 100%;
 }
 
 
-.bc-4-text-3> h3{
+.bc-4-text-3>h3 {
     font-weight: 400;
     font-style: normal;
     font-size: 21px;
@@ -430,7 +386,7 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
     margin-top: 10px;
 }
 
-.bc-4-two-cta-3{
+.bc-4-two-cta-3 {
     margin-top: 12px;
     display: flex;
     align-items: center;
@@ -453,23 +409,16 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
     color: #2997ff;
 }
 
-/* -------------------------- */
-
+/* ...................................................................... */
 
 .bc-44 {
     background-image: url('https://www.apple.com/v/home/be/images/promos/airpods-pro/promo_airpods_pro_order__d8xv36p4uwae_large_2x.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .bc-4-text-4 {
     width: 100%;
     height: 139px;
     padding: 47px 0px 0px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     font-weight: 600;
     font-style: normal;
@@ -478,28 +427,22 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
     color: #f5f5f7;
 }
 
-.bc-4-text-4> h2{
+.bc-4-text-4>h2 {
     width: 100%;
     height: 52px;
     text-align: center;
     border: 1px solid red;
 }
 
-.bc-4-text-4> h2> img{
-    height: 100%;
-}
-
-
-.bc-4-text-4> h3{
+.bc-4-text-4>h3 {
     font-weight: 400;
     font-style: normal;
     font-size: 21px;
     line-height: 29px;
-    /* color: #f5f5f7; */
     margin-top: 10px;
 }
 
-.bc-4-two-cta-4{
+.bc-4-two-cta-4 {
     margin-top: 12px;
     display: flex;
     align-items: center;
@@ -522,38 +465,109 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
     color: #2997ff;
 }
 
-/* -------------------------- */
-
+/* ...................................................................... */
 
 .bc-45 {
     background-image: url('https://www.apple.com/v/home/be/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_large_2x.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .bc-4-text-5 {
     width: 100%;
     padding: 47px 0px 0px 0px;
-    color: #f5f5f7;
+    color: #1d1d1f;
     text-align: center;
     border: 1px solid red;
 }
 
-/* -------------------------- */
+.bc-4-text-5>h2 {
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    border: 1px solid red;
+}
 
+.bc-4-text-5>h2>img {
+    height: 100%;
+}
+
+.bc-4-text-5>h3 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 29px;
+    margin-top: 10px;
+}
+
+.bc-4-two-cta-5 {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bc-4-two-cta-5>a {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 29px;
+    color: #2997ff;
+}
+
+.bc-4-two-cta-5>a>i {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #2997ff;
+}
+
+/* ...................................................................... */
 
 .bc-46 {
     background-image: url('https://www.apple.com/v/home/be/images/promos/homepod-mini/tile_homepod_mini__b73w4z3ljymu_large_2x.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .bc-4-text-6 {
     width: 100%;
+    height: 139px;
     padding: 47px 0px 0px 0px;
-    color: #f5f5f7;
+    flex-direction: column;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 29px;
+    color: #1d1d1f;
+    border: 1px solid red;
+}
+
+.bc-4-text-6>h2 {
+    width: 100%;
+    height: 52px;
     text-align: center;
     border: 1px solid red;
+}
+
+.bc-4-two-cta-6 {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    border: 1px solid red;
+}
+
+.bc-4-two-cta-6>a {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 29px;
+    color: #2997ff;
+}
+
+.bc-4-two-cta-6>a>i {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #2997ff;
 }
