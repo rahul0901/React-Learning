@@ -48,7 +48,7 @@
 .body-content-1 {
     width: 100%;
     height: 580px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-image: url('https://www.apple.com/v/home/be/images/heroes/iphone-15-pro/hero_iphone15pro__i70z9oz3hj2i_large_2x.jpg');
     background-size: cover;
     background-position: center;
@@ -110,14 +110,19 @@
 .body-content-2 {
     width: 100%;
     height: 580px;
-    border: 1px solid red;
-    background-image: url('https://www.apple.com/v/home/be/images/heroes/iphone-15/hero_iphone15_announce__uuemlcwczn6u_small_2x.jpg');
+    /* border: 1px solid red; */
+    background-image: url('https://www.apple.com/v/home/be/images/heroes/iphone-15/hero_iphone15_announce__uuemlcwczn6u_large_2x.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 10px 0px;
     z-index: 2;
 }
+
+/* https://www.apple.com/v/home/be/images/heroes/iphone-15/hero_iphone15_announce__uuemlcwczn6u_large_2x.jpg
+
+https://www.apple.com/v/home/be/images/heroes/iphone-15/hero_iphone15_announce__uuemlcwczn6u_small_2x.jpg
+*/
 
 .bc-2-text {
     width: 100%;
@@ -195,7 +200,7 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
 
 .bc-3-text > h2{
@@ -242,3 +247,29 @@ https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watc
     color: #2997ff;
     /* margin-top: 13px; */
 }
+
+/* ...................... */
+
+.body-content-4{
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.body-content-4 > div{
+    border: 1px solid green;
+    width: 49.5%;
+    height: 580px;
+}
+
+.bc-4-text-4{
+    background-image: url('https://www.apple.com/v/home/be/images/promos/airpods-pro/promo_airpods_pro_order__d8xv36p4uwae_medium_2x.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
