@@ -1,11 +1,12 @@
 import React from 'react';
-import './Home.css'
+import './Home.css';
+import './MediaHome.css';
 
 const Home = () => {
   return (
     <>
       <div className="home-screen">
-        <div className="offer-section flex">
+        <div className="offer-section">
           <span>Get up to ₹8000.00 instant savings on selected products with eligible HDFC Bank cards.*</span>
           <a>Shop now</a>
           <i class="fa-solid fa-greater-than"></i>

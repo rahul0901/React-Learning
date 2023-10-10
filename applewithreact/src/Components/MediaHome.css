@@ -1,0 +1,22 @@
+@media screen and (max-width:1000px) {
+    .body-content-4>div{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .body-content-1{
+        background-image: url('https://www.apple.com/v/home/be/images/heroes/iphone-15-pro/hero_iphone15pro__i70z9oz3hj2i_small_2x.jpg');
+    }
+
+    .body-content-2{
+        background-image: url('https://www.apple.com/v/home/be/images/heroes/iphone-15/hero_iphone15_announce__uuemlcwczn6u_small_2x.jpg');
+    }
+
+    .bc-1-text, .bc-1-text>h3, .bc-1-two-cta>a{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+    
+}
