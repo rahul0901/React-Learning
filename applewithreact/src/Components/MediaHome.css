@@ -1,22 +1,167 @@
 @media screen and (max-width:1000px) {
-    .body-content-4>div{
+    .body-content-4>div {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 835px) {
-    .body-content-1{
+    .body-content-1 {
         background-image: url('https://www.apple.com/v/home/be/images/heroes/iphone-15-pro/hero_iphone15pro__i70z9oz3hj2i_small_2x.jpg');
     }
 
-    .body-content-2{
+    .body-content-2 {
         background-image: url('https://www.apple.com/v/home/be/images/heroes/iphone-15/hero_iphone15_announce__uuemlcwczn6u_small_2x.jpg');
     }
 
-    .bc-1-text, .bc-1-text>h3, .bc-1-two-cta>a{
+    .bc-1-text,
+    .bc-1-text>h3,
+    .bc-1-two-cta>a {
         font-size: 14px;
         font-weight: 400;
         line-height: 19px;
     }
-    
+
+    .bc-1-two-cta>a>i {
+        font-size: 8px;
+        line-height: 11px;
+    }
+
+    .bc-2-text,
+    .bc-2-text>h3,
+    .bc-2-two-cta>a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+
+    .bc-2-two-cta>a>i {
+        font-size: 8px;
+        line-height: 11px;
+    }
+
+    .bc-3-text,
+    .bc-3-text>h3,
+    .bc-3-two-cta>a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+
+    .bc-3-two-cta>a>i {
+        font-size: 8px;
+        line-height: 11px;
+    }
+
+    .bc-4-text-1>h2 {
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 25px;
+    }
+
+    .bc-4-text-1>h3,
+    .bc-4-two-cta-1>a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+
+    .bc-4-two-cta-1>a>i {
+        font-size: 8px;
+        line-height: 11px;
+    }
+
+    .bc-4-text-2>h2 {
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 25px;
+    }
+
+    .bc-4-text-2>h3,
+    .bc-4-two-cta-2>a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+
+    .bc-4-two-cta-2>a>i {
+        font-size: 8px;
+        line-height: 11px;
+    }
+
+    .bc-4-text-3>h2 {
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 25px;
+    }
+
+    .bc-4-text-3>h3,
+    .bc-4-two-cta-3>a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+
+    .bc-4-two-cta-3>a>i {
+        font-size: 8px;
+        line-height: 11px;
+    }
+
+    .bc-4-text-4>h2 {
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 25px;
+    }
+
+    .bc-4-text-4>h3,
+    .bc-4-two-cta-4>a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+
+    .bc-4-two-cta-4>a>i {
+        font-size: 8px;
+        line-height: 11px;
+    }
+
+    .bc-4-text-5>h2 {
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 25px;
+        height: auto;
+    }
+
+    .bc-4-text-5>h2>img{
+        height: 27px;
+        text-align: center;
+    }
+
+    .bc-4-text-5>h3,
+    .bc-4-two-cta-5>a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+
+    .bc-4-two-cta-5>a>i {
+        font-size: 8px;
+        line-height: 11px;
+    }
+
+    .bc-4-text-6>h2 {
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 25px;
+    }
+
+    .bc-4-two-cta-6>a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+
+    .bc-4-two-cta-6>a>i {
+        font-size: 8px;
+        line-height: 11px;
+    }
 }

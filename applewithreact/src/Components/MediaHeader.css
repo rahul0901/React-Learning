@@ -21,7 +21,7 @@
     .head-1>img {
         width: 20%;
         height: 100%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         display: flex;
         align-items: center;
         justify-content: left;

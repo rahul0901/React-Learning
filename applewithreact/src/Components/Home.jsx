@@ -58,7 +58,7 @@ const Home = () => {
           <div className="bc-42 bg-img-css">
             <div className="bc-4-text-2 flex">
               <h2><img src="https://www.apple.com/v/home/be/images/logos/apple-watch-ultra-2/promo_logo_apple_watch_ultra2__ggg2x39rsvqu_large_2x.png" alt="" /></h2>
-              <h3>Smarter. Brighter. Mightier.</h3>
+              <h3>Next-level adventure.</h3>
               <div className="bc-4-two-cta-2">
                 <a>Learn more <i class="fa-solid fa-greater-than"></i></a>
                 <a>Buy <i class="fa-solid fa-greater-than"></i></a>
