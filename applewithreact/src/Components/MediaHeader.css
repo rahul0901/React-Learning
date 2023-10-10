@@ -1,15 +1,15 @@
 @media screen and ((min-width:836px) and (max-width:1000px)) {
-    .head-child{
+    .head-child {
         width: 100%;
     }
 }
 
 @media screen and (max-width:835px) {
-    .head-child{
+    .head-child {
         width: 100%;
     }
 
-    .head-1{
+    .head-1 {
         width: 64%;
         height: 100%;
         display: flex;
@@ -18,7 +18,7 @@
         color: green;
     }
 
-    .head-1 > img{
+    .head-1>img {
         width: 20%;
         height: 100%;
         border: 1px solid red;
@@ -27,23 +27,23 @@
         justify-content: left;
     }
 
-    .head-2{
+    .head-2 {
         display: none;
     }
 
-    .head-3{
+    .head-3 {
         width: 12%;
-        height: 100%; 
-        color: #ffffff;       
+        height: 100%;
+        color: #ffffff;
     }
 
-    .head-4{
+    .head-4 {
         width: 12%;
-        height: 100%; 
-        color: #ffffff;       
+        height: 100%;
+        color: #ffffff;
     }
 
-    .head-5{
+    .head-5 {
         width: 12%;
         height: 100%;
         display: flex;
