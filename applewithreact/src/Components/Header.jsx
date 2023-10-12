@@ -12,15 +12,15 @@ const Header = (props) => {
     const [userData, setData] = useState({ userKaName: '', userKaEmail: '', userKaPassword: '' })
 
     const handleFormData = (event) => {
-        setData({ ...userData,[event.target.name]: event.target.value });
+        setData({ ...userData, [event.target.name]: event.target.value });
     }
 
     const submitForm = (event) => {
         event.preventDefault()
-        if (userData.userKaName && userData.userKaEmail && userData.userKaPassword){
+        if (userData.userKaName && userData.userKaEmail && userData.userKaPassword) {
             if (userData.userKaPassword.length >= 6) {
                 toast.success('user ban gaya!')
-                setData({userKaName: '', userKaEmail: '', userKaPassword: ''})
+                setData({ userKaName: '', userKaEmail: '', userKaPassword: '' })
             }
             else {
                 toast.error('password to bada rakh bachii')
@@ -92,13 +92,13 @@ const Header = (props) => {
                                     <div className="form-child">
                                         <form onSubmit={submitForm}>
                                             <label>Name: </label> <br />
-                                            <input type="text" name='userKaName' onChange={handleFormData}  value={userData.userKaName} /> <br />
+                                            <input type="text" name='userKaName' onChange={handleFormData} value={userData.userKaName} /> <br />
 
                                             <label>Email: </label> <br />
-                                            <input type="email" name='userKaEmail' onChange={handleFormData}  value={userData.userKaEmail} /> <br />
+                                            <input type="email" name='userKaEmail' onChange={handleFormData} value={userData.userKaEmail} /> <br />
 
                                             <label>Password: </label> <br />
-                                            <input type="password" name='userKaPassword' onChange={handleFormData}  value={userData.userKaPassword} /> <br />
+                                            <input type="password" name='userKaPassword' onChange={handleFormData} value={userData.userKaPassword} /> <br />
                                             <button type='submit'>Submit</button>
 
                                         </form>

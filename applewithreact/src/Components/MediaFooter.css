@@ -1,0 +1,13 @@
+/* @media screen and ((min-width:835px) and (max-width:1000px)) {
+    .foot-child{
+        width: 94%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:835px) {
+    .foot-child{
+        width: 90%;
+        margin: auto;
+    }    
+} */

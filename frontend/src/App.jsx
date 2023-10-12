@@ -19,12 +19,17 @@ import Styled from './components/Styled';
 import CounterCheck from './components/CounterCheck';
 import UseMemo from './components/UseMemo';
 import UseCallback from './components/UseCallback';
+import UseReducer from './components/UseReducer';
+import TestReducer from './components/TestReducer';
+import { GlobalContext } from './components/Context/GlobalContext';
+
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <div className="App">
       Hello Rahul!
+      <GlobalContext>
       <Routes>
         <Route exact path='/' element={<Homepage />} />
         <Route exact path='/login' element={<Login />} />
@@ -38,14 +43,17 @@ function App() {
         <Route exact path='/params' element={<Params />} />
         <Route exact path='/product/:dynamicslugchangermethod' element={<Product />} />
         <Route exact path='/mantras' element={<Mantra />} />
-        //sending props shown below..
+        {/* //sending props shown below.. */}
         <Route exact path='/mapping' element={<Mapping names={["Dhoni", "abd", "virat"]} />} />
         <Route exact path='/terinary' element={<Terinaryy isLoggedIn = {isLoggedIn} setIsLoggedIn = {setIsLoggedIn} />} />
         <Route exact path='/styled' element={<Styled/>} />
         <Route exact path='/checkcountercounts' element={<CounterCheck />} />
         <Route exact path='/use-memo' element={<UseMemo />} />
         <Route exact path='/use-callback' element={<UseCallback />} />
+        <Route exact path='/use-reducer' element={<UseReducer/>}/>
+        <Route exact path='/test-reducer' element={<TestReducer/>}/>
       </Routes>
+      </GlobalContext>
     </div>
   );
 }
