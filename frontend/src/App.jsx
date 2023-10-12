@@ -17,11 +17,6 @@ import Terinaryy from './components/Terinaryy';
 import { useState } from 'react';
 import Styled from './components/Styled';
 import CounterCheck from './components/CounterCheck';
-import UseMemo from './components/UseMemo';
-import UseCallback from './components/UseCallback';
-import UseReducer from './components/UseReducer';
-import TestReducer from './components/TestReducer';
-import { GlobalContext } from './components/Context/GlobalContext';
 
 
 function App() {
@@ -29,7 +24,6 @@ function App() {
   return (
     <div className="App">
       Hello Rahul!
-      <GlobalContext>
       <Routes>
         <Route exact path='/' element={<Homepage />} />
         <Route exact path='/login' element={<Login />} />
@@ -48,12 +42,7 @@ function App() {
         <Route exact path='/terinary' element={<Terinaryy isLoggedIn = {isLoggedIn} setIsLoggedIn = {setIsLoggedIn} />} />
         <Route exact path='/styled' element={<Styled/>} />
         <Route exact path='/checkcountercounts' element={<CounterCheck />} />
-        <Route exact path='/use-memo' element={<UseMemo />} />
-        <Route exact path='/use-callback' element={<UseCallback />} />
-        <Route exact path='/use-reducer' element={<UseReducer/>}/>
-        <Route exact path='/test-reducer' element={<TestReducer/>}/>
       </Routes>
-      </GlobalContext>
     </div>
   );
 }

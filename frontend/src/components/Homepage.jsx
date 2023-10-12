@@ -1,9 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { MyContext } from "./Context/GlobalContext";
 
 function Homepage() {
-
-    const { state, dispatch } = useContext(MyContext);
 
     const router = useNavigate();
 
@@ -29,8 +26,6 @@ function Homepage() {
     return (
         <div>
             <h1>Homepage</h1>
-            <h1>Counter : {state.counter}</h1>
-            <button onClick={() => dispatch({ type: "INCREMENT" })}>+</button>
             <button onClick={register}>Register Here!</button>
             {/* <button onClick={()=> router('/register')}>Register Here!</button> */}
             <button onClick={routeToLogin}>Go to Login</button>
