@@ -1,32 +1,32 @@
-// import { createContext, useReducer } from "react";
+import { createContext, useReducer } from "react";
 
-// export const MyContext = createContext();
+export const MyContext = createContext();
 
-// const reducer = (state, action) => {
-//     switch (action.type) {
-//         case "INCREMENT":
-//             return { ...state, counter: state.counter + 1 }
-//         case "DECREMENT":
-//             return { ...state, counter: state.counter - 1 }
-//         case "RESET":
-//             return { ...state, counter: 0 }
-//         default:
-//             return state;
-//     }
-// }
+const reducer = (state, action) => {
+    switch (action.type) {
+        case "INCREMENT":
+            return { ...state, counter: state.counter + 1 }
+        case "DECREMENT":
+            return { ...state, counter: state.counter - 1 }
+        case "RESET":
+            return { ...state, counter: 0 }
+        default:
+            return state;
+    }
+}
 
-// export const GlobalContext = ({ children }) => {
+export const GlobalContext = ({ children }) => {
 
-//     const initialState = { counter: 10 };
+    const initialState = { counter: 10 };
 
-//     const [state, dispatch] = useReducer(reducer, initialState)
+    const [state, dispatch] = useReducer(reducer, initialState)
 
-//     return (
-//         <MyContext.Provider value={{ state, dispatch }}>
-//             {children}
-//         </MyContext.Provider>
+    return (
+        <MyContext.Provider value={{ state, dispatch }}>
+            {children}
+        </MyContext.Provider>
 
-//     )
-// }
+    )
+}
 
-// // export default GlobalContext;
+// export default GlobalContext;
