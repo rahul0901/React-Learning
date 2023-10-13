@@ -18,6 +18,7 @@ import { useState } from 'react';
 import Styled from './components/Styled';
 import CounterCheck from './components/CounterCheck';
 import UseMemo from './components/UseMemo';
+import UseCallBack from './components/UseCallBack';
 
 
 function App() {
@@ -43,7 +44,8 @@ function App() {
         <Route exact path='/terinary' element={<Terinaryy isLoggedIn = {isLoggedIn} setIsLoggedIn = {setIsLoggedIn} />} />
         <Route exact path='/styled' element={<Styled/>} />
         <Route exact path='/checkcountercounts' element={<CounterCheck />} />
-        <Route exact path='/use-memo' element={<UseMemo />} />
+        <Route exact path='/use-memo' element={<UseMemo />} /> 
+        <Route exact path='/use-callback' element={<UseCallBack />} />
       </Routes>
     </div>
   );
