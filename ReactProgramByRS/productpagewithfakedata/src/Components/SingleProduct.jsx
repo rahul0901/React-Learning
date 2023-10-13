@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import ErrorPage from './ErrorPage';
 
 const SingleProduct = () => {
 
@@ -37,7 +38,6 @@ const SingleProduct = () => {
                     </div>
                 ))}</div> : <div>Loading..</div>}
             </div>
-
         </>
     )
 }
