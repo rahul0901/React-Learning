@@ -18,7 +18,7 @@ const SingleProduct = () => {
         }
 
         getData()
-    },[id])
+    }, [id])
 
     // above is sigle depenedency means jab id ka value change hoga aur page refresh hoga tabhi ueeffect render hoga..
 
@@ -26,7 +26,7 @@ const SingleProduct = () => {
         <>
             <div>SingleProduct  - {id}</div>
             <div>
-                {userData?.length ? <div>{userData.map((item, index)=>(
+                {userData?.length ? <div>{userData.map((item, index) => (
                     <div key={index} className='parent'>
                         <div className="child-1">
                             <img src={item.image} alt="" />
