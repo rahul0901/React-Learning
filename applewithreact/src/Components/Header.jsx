@@ -3,8 +3,11 @@ import './Header.css';
 import './MediaHeader.css'
 import logo from './open_graph_logo-removebg-preview.png';
 import toast from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 
 const Header = (props) => {
+
+    const route = useNavigate();
 
     const { navUL, HeadHover1, HeadHover2, HeadHover3 } = props;
     const [openShop, setShop] = useState(false);
@@ -54,12 +57,12 @@ const Header = (props) => {
                         </div>
                         <div className="head-2">
                             {navUL.map((item, index) => (
-                                <a key={index}>
+                                <a key={index} onClick={() => route(`/${item.toLowerCase()}.jsx`)}>
                                     {item}
                                     <div className="head-2-hover-contents">
                                         <div className="hover-contents-child">
                                             <div className="hover-contents-1">
-                                                <h2>Shop</h2>
+                                                <h2 onClick={() => route('./Store.jsx')}>Shop</h2>
                                                 {HeadHover1.map((item, index) => (
                                                     <a key={index}> {item} </a>
                                                 ))}
