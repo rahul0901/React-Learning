@@ -57,7 +57,7 @@ const Header = (props) => {
                         </div>
                         <div className="head-2">
                             {navUL.map((item, index) => (
-                                <a key={index} onClick={() => route(`/${item.toLowerCase()}.jsx`)}>
+                                <a key={index} onClick={() => route(`/${item.toLowerCase()}`)}>
                                     {item}
                                     <div className="head-2-hover-contents">
                                         <div className="hover-contents-child">
