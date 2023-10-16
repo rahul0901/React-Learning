@@ -15,11 +15,17 @@
         flex-direction: column;
     }
 
-    .foot-child-2 p:nth-child(n){
+    .foot-child-21-1, .foot-child-22-1, .foot-child-23-1, .foot-child-24-1, .foot-child-21-2, .foot-child-22-2, .foot-child-24-2{
         width: 100%;
         padding: 10px 0px;
         border-bottom: 1px solid #6e6e73 ;
+
     }
+    /* .foot-child-2 p:not(:last-child){
+        width: 100%;
+        padding: 10px 0px;
+        border-bottom: 1px solid #6e6e73 ;
+    } */
 
     .foot-child-2 a:nth-child(n) {
         color: red;
