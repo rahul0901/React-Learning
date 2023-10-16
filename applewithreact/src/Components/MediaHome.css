@@ -5,6 +5,7 @@
 }
 
 @media screen and (max-width: 835px) {
+
     .body-content-1 {
         background-image: url('https://www.apple.com/v/home/be/images/heroes/iphone-15-pro/hero_iphone15pro__i70z9oz3hj2i_small_2x.jpg');
     }
@@ -131,7 +132,7 @@
         height: auto;
     }
 
-    .bc-4-text-5>h2>img{
+    .bc-4-text-5>h2>img {
         height: 27px;
         text-align: center;
     }
@@ -164,4 +165,19 @@
         font-size: 8px;
         line-height: 11px;
     }
+}
+
+@media screen and (max-width:475px) {
+
+    .diwali-section>h2 {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 39px;
+    }
+
+    .diwali-section>h3 {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
 }
