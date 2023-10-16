@@ -16,13 +16,13 @@ const Footer = (props) => {
             <div className="foot-child-2">
               <div className="foot-child-21">
                 <div className="foot-child-21-1">
-                  <span>Shop and Learn</span>
+                  <p>Shop and Learn</p>
                   {FirstUl.map((item, index) => (
                     <a key={index}>{item}</a>
                   ))}
                 </div>
                 <div className="foot-child-21-2">
-                  <span>Apple Wallet</span>
+                  <p>Apple Wallet</p>
                   {FirstUl2.map((item, index) => (
                     <a key={index}>{item}</a>
                   ))}
@@ -30,13 +30,13 @@ const Footer = (props) => {
               </div>
               <div className="foot-child-22">
                 <div className="foot-child-22-1">
-                  <span>Account</span>
+                  <p>Account</p>
                   {SecondUl.map((item, index) => (
                     <a key={index}>{item}</a>
                   ))}
                 </div>
                 <div className="foot-child-22-2">
-                  <span>Entertainment</span>
+                  <p>Entertainment</p>
                   {SecondUl2.map((item, index) => (
                     <a key={index}>{item}</a>
                   ))}
@@ -44,7 +44,7 @@ const Footer = (props) => {
               </div>
               <div className="foot-child-23">
                 <div className="foot-child-23-1">
-                  <span>Apple Store</span>
+                  <p>Apple Store</p>
                   {ThirdUl.map((item, index) => (
                     <a key={index}>{item}</a>
                   ))}
@@ -52,13 +52,13 @@ const Footer = (props) => {
               </div>
               <div className="foot-child-24">
                 <div className="foot-child-24-1">
-                  <span>Shop and Learn</span>
+                  <p>Shop and Learn</p>
                   {FirstUl.map((item, index) => (
                     <a key={index}>{item}</a>
                   ))}
                 </div>
                 <div className="foot-child-24-2">
-                  <span>Apple Wallet</span>
+                  <p>Apple Wallet</p>
                   {FirstUl2.map((item, index) => (
                     <a key={index}>{item}</a>
                   ))}
@@ -66,6 +66,7 @@ const Footer = (props) => {
               </div>
             </div>
             <div className="foot-child-3">
+              <p>&copy; Rahul Shinde 2023</p>
             </div>
 
           </div>

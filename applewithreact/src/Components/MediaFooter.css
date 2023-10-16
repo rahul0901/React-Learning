@@ -1,13 +1,28 @@
 @media screen and ((min-width:835px) and (max-width:1000px)) {
-    .foot-child{
+    .foot-child {
         width: 94%;
         margin: auto;
     }
 }
 
 @media screen and (max-width:835px) {
-    .foot-child{
+    .foot-child {
         width: 90%;
         margin: auto;
-    }    
+    }
+
+    .foot-child-2 {
+        flex-direction: column;
+    }
+
+    .foot-child-2 p:nth-child(n){
+        width: 100%;
+        padding: 10px 0px;
+        border-bottom: 1px solid #6e6e73 ;
+    }
+
+    .foot-child-2 a:nth-child(n) {
+        color: red;
+        display: none;
+    }
 }
