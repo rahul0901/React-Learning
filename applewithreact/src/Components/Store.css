@@ -10,6 +10,10 @@
     /* justify-content: center; */
 }
 
+/* .head-parent-store{
+    background-color: white;
+} */
+
 .screen-store{
     width: 100%;
     height: 100%;
@@ -17,12 +21,12 @@
     border: 1px solid red;
 }
 
-.offer-section{
+.offer-section-store{
     width: 100%;
     text-align: center;
 }
 
-.offer-section> :nth-child(n){
+.offer-section-store> :nth-child(n){
     border: 1px solid red;
 }
 

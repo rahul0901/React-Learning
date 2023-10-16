@@ -6,6 +6,13 @@ const Home = () => {
   return (
     <>
       <div className="home-screen">
+        <div className="diwali-section">
+          <h2>Gifts to spark joy.</h2>
+          <h3>Enjoy up to ₹10000 instant savings on <br />eligible products with HDFC Bank Credit Cards.</h3>
+          <div className="diwali-btn">
+            <button>Shop Now</button>
+          </div>
+        </div>
         <div className="offer-section">
           <span>Get up to ₹8000.00 instant savings on selected products with eligible HDFC Bank cards.*</span>
           <a>Shop now</a>
