@@ -48,6 +48,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #000000;
 }
 
 .ic-1-up{
@@ -59,7 +60,7 @@
 
 .ic-1-down{
     width: 100%;
-    height: 820px;
+    height: 620px;
     background-color: #000000;
     border: 2px solid red;
     display: flex;
@@ -68,14 +69,10 @@
 }
 
 .ic-1-down-1{
-    /* width: 85%; */
-    /* margin: 122px 0px; */
-    /* padding: 122px 0px; */
-    /* margin: auto; */
     height: 360px;
     border: 1px solid blue;
     color: white;
-    background-image: url('https://www.apple.com/in/iphone-15-pro/images/overview/welcome/hero_endframe__ov6ewwmbhiqq_large_2x.jpg');
+    background-image: url('https://www.apple.com/in/iphone-15-pro/images/overview/welcome/hero_endframe__ov6ewwmbhiqq_medium_2x.jpg');
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -89,7 +86,7 @@
     font-weight: 600;
     font-size: 28px;
     line-height: 32px;
-    color: #f5f5f7;
+    color: #bab4aa;
 }
 
 .ic-1-down-2{
