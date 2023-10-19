@@ -154,12 +154,12 @@
     padding: 40px 22px 84px 22px;
 }
 
-.shop-hover-contents{
+.shop-hover-contents {
     width: 80%;
     margin: auto;
 }
 
-.shop-hover-contents>h2{
+.shop-hover-contents>h2 {
     margin-bottom: 24px;
     font-style: normal;
     font-weight: 600;
@@ -168,11 +168,11 @@
     color: #e8e8ed;
 }
 
-.shop-hover-contents > :nth-child(2){
+.shop-hover-contents> :nth-child(2) {
     margin-top: 9.6px;
 }
 
-.shop-hover-contents > a{
+.shop-hover-contents>a {
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -180,7 +180,7 @@
     color: #0658aa;
 }
 
-.shop-hover-contents > :nth-child(2) span{
+.shop-hover-contents> :nth-child(2) span {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -188,7 +188,7 @@
     color: #86868b;
 }
 
-.shop-hover-contents > :nth-child(3){
+.shop-hover-contents> :nth-child(3) {
     margin-top: 36px;
     padding-bottom: 6px;
     font-style: normal;
@@ -198,7 +198,7 @@
     color: #86868b;
 }
 
-.shop-hover-icons-action{
+.shop-hover-icons-action {
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
@@ -209,11 +209,11 @@
     color: #ffffff;
 }
 
-.shop-hover-icons-action>a{
+.shop-hover-icons-action>a {
     margin: 6px 0px;
 }
 
-.shop-hover-icons-action i{
+.shop-hover-icons-action i {
     padding-right: 10px;
 }
 
@@ -242,6 +242,29 @@
     width: 50%;
     height: 60%;
     color: black;
+}
+
+.form-child h1 {
+    padding-top: 34px;
+    text-align: center;
+}
+
+.form-child h2 {
+    margin: 5px 130px 13px 130px;
+    text-align: center;
+}
+
+.name-input{
+    border: 1px solid red;
+    width: 50%;
+    margin: auto;
+    padding: 18px 43px 0px 16px;
+}
+
+.name-input input{
+    height: 36px;
+    width: 100%;
+    border: 1px solid red;
 }
 
 .head-5 {
