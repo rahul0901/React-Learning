@@ -149,9 +149,72 @@
     top: 46px;
     left: 0;
     width: 100%;
-    color: black;
+    color: white;
     background-color: #161617;
     padding: 40px 22px 84px 22px;
+}
+
+.shop-hover-contents{
+    width: 80%;
+    margin: auto;
+}
+
+.shop-hover-contents>h2{
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #e8e8ed;
+}
+
+.shop-hover-contents > :nth-child(2){
+    margin-top: 9.6px;
+}
+
+.shop-hover-contents > a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: #0658aa;
+}
+
+.shop-hover-contents > :nth-child(2) span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #86868b;
+}
+
+.shop-hover-contents > :nth-child(3){
+    margin-top: 36px;
+    padding-bottom: 6px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #86868b;
+}
+
+.shop-hover-icons-action{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ffffff;
+}
+
+.shop-hover-icons-action>a{
+    margin: 6px 0px;
+}
+
+.shop-hover-icons-action i{
+    padding-right: 10px;
 }
 
 .shop-hover>p {
@@ -178,6 +241,7 @@
     background-color: white;
     width: 50%;
     height: 60%;
+    color: black;
 }
 
 .head-5 {
