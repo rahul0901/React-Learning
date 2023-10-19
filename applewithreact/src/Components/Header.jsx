@@ -90,24 +90,34 @@ const Header = (props) => {
                         <div className="head-4" >
                             <i class="fa-solid fa-bag-shopping" onClick={openShopping}></i>
                             {openShop && <div className='shop-hover'>
-                                <p onClick={handleForm}>Sign in</p>
-                                {formstatus && <div className='form-parent'>
-                                    <div className="form-child">
-                                        <form onSubmit={submitForm}>
-                                            <label>Name: </label> <br />
-                                            <input type="text" name='userKaName' onChange={handleFormData} value={userData.userKaName} /> <br />
+                                <div className="shop-hover-contents">
+                                    <h2>Your Bag is empty.</h2>
+                                    <a>Sign in <span>to see if you have any saved items</span> </a>
+                                    <h3>My Profile</h3>
+                                    <div className="shop-hover-icons-action">
+                                        <a><i class="fa-solid fa-box"></i> Orders</a>
+                                        <a><i class="fa-regular fa-bookmark"></i> Your Saves</a>
+                                        <a><i class="fa-solid fa-id-badge"></i> Account</a>
+                                        <a onClick={handleForm}> <i class="fa-solid fa-user"></i> Sign in</a>
+                                        {formstatus && <div className='form-parent'>
+                                            <div className="form-child">
+                                                <form onSubmit={submitForm}>
+                                                    <label>Name: </label> <br />
+                                                    <input type="text" name='userKaName' onChange={handleFormData} value={userData.userKaName} /> <br />
 
-                                            <label>Email: </label> <br />
-                                            <input type="email" name='userKaEmail' onChange={handleFormData} value={userData.userKaEmail} /> <br />
+                                                    <label>Email: </label> <br />
+                                                    <input type="email" name='userKaEmail' onChange={handleFormData} value={userData.userKaEmail} /> <br />
 
-                                            <label>Password: </label> <br />
-                                            <input type="password" name='userKaPassword' onChange={handleFormData} value={userData.userKaPassword} /> <br />
-                                            <button type='submit'>Submit</button>
+                                                    <label>Password: </label> <br />
+                                                    <input type="password" name='userKaPassword' onChange={handleFormData} value={userData.userKaPassword} /> <br />
+                                                    <button type='submit'>Submit</button>
 
-                                        </form>
-                                        <button onClick={closeform}>X</button>
+                                                </form>
+                                                <button onClick={closeform}>X</button>
+                                            </div>
+                                        </div>}
                                     </div>
-                                </div>}
+                                </div>
                             </div>}
                         </div>
                         <div className="head-5">
