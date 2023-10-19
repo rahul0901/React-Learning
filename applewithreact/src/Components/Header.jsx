@@ -92,7 +92,7 @@ const Header = (props) => {
                             {openShop && <div className='shop-hover'>
                                 <div className="shop-hover-contents">
                                     <h2>Your Bag is empty.</h2>
-                                    <a>Sign in <span>to see if you have any saved items</span> </a>
+                                    <a onClick={handleForm}>Sign in <span>to see if you have any saved items</span> </a>
                                     <h3>My Profile</h3>
                                     <div className="shop-hover-icons-action">
                                         <a><i class="fa-solid fa-box"></i> Orders</a>
@@ -102,8 +102,12 @@ const Header = (props) => {
                                         {formstatus && <div className='form-parent'>
                                             <div className="form-child">
                                                 <form onSubmit={submitForm}>
-                                                    <label>Name: </label> <br />
-                                                    <input type="text" name='userKaName' onChange={handleFormData} value={userData.userKaName} /> <br />
+                                                    <h1>Sign in for faster checkout.</h1>
+                                                    <h2>Sign in to Apple Store</h2>
+                                                    <div className="name-input">
+                                                        {/* <label>Name: </label> */}
+                                                        <input type="text" name='userKaName' onChange={handleFormData} value={userData.userKaName} placeholder='Email or Phone Number' />
+                                                    </div>
 
                                                     <label>Email: </label> <br />
                                                     <input type="email" name='userKaEmail' onChange={handleFormData} value={userData.userKaEmail} /> <br />
