@@ -102,22 +102,31 @@ const Header = (props) => {
                                         {formstatus && <div className='form-parent'>
                                             <div className="form-child">
                                                 <form onSubmit={submitForm}>
-                                                    <h1>Sign in for faster checkout.</h1>
+                                                    <div className="form-child-head">
+                                                        <h1>Sign in for faster checkout.</h1>
+                                                        <button onClick={closeform}>X</button>
+                                                    </div>
                                                     <h2>Sign in to Apple Store</h2>
                                                     <div className="name-input">
                                                         {/* <label>Name: </label> */}
-                                                        <input type="text" name='userKaName' onChange={handleFormData} value={userData.userKaName} placeholder='Email or Phone Number' />
+                                                        <input type="text" name='userKaName' onChange={handleFormData} value={userData.userKaName} placeholder='Username or Apple Id' />
+                                                    </div>
+                                                    {/* <label>Email: </label> <br /> */}
+                                                    <div className="email-input">
+                                                        <input type="email" name='userKaEmail' onChange={handleFormData} value={userData.userKaEmail} placeholder='Email' />
                                                     </div>
 
-                                                    <label>Email: </label> <br />
-                                                    <input type="email" name='userKaEmail' onChange={handleFormData} value={userData.userKaEmail} /> <br />
-
-                                                    <label>Password: </label> <br />
-                                                    <input type="password" name='userKaPassword' onChange={handleFormData} value={userData.userKaPassword} /> <br />
-                                                    <button type='submit'>Submit</button>
-
+                                                    <div className="pasword-input">
+                                                        <input type="password" name='userKaPassword' onChange={handleFormData} value={userData.userKaPassword} placeholder='Password' />
+                                                    </div>
+                                                    <div className="checkbox">
+                                                        <input type="checkbox" name="" id="check" />
+                                                        <label htmlFor='check' >Remember Me</label>
+                                                    </div>
+                                                    <div className="form-submit-btn">
+                                                        <button type='submit'>Submit</button>
+                                                    </div>
                                                 </form>
-                                                <button onClick={closeform}>X</button>
                                             </div>
                                         </div>}
                                     </div>
