@@ -91,7 +91,10 @@ const Header = (props) => {
                             <i class="fa-solid fa-bag-shopping" onClick={openShopping}></i>
                             {openShop && <div className='shop-hover'>
                                 <div className="shop-hover-contents">
-                                    <h2>Your Bag is empty.</h2>
+                                    <div className="shop-hover-contents-title">
+                                        <h2>Your Bag is empty.</h2>
+                                        <button onClick={closeform}>X</button>
+                                    </div>
                                     <a onClick={handleForm}>Sign in <span>to see if you have any saved items</span> </a>
                                     <h3>My Profile</h3>
                                     <div className="shop-hover-icons-action">
@@ -126,6 +129,7 @@ const Header = (props) => {
                                                     <div className="form-submit-btn">
                                                         <button type='submit'>Submit</button>
                                                     </div>
+                                                    <a>Do not have an Apple ID? <span>Create Yours now</span></a>
                                                 </form>
                                             </div>
                                         </div>}
