@@ -87,6 +87,7 @@
     background-color: transparent;
     color: #f0e3ca;
     border-radius: 22px;
+    cursor: pointer;
 }
 
 .offer-section {
@@ -110,6 +111,7 @@
 .offer-section>a {
     color: #0658aa;
     margin-left: 4px;
+    cursor: pointer;
 }
 
 .offer-section>i {
@@ -119,6 +121,7 @@
     line-height: 13px;
     color: #0658aa;
     margin-left: 6px;
+    cursor: pointer;
 }
 
 /* --------------------------------------------------------------------- */
@@ -126,6 +129,7 @@
 .body-content-1 {
     background-image: url('https://www.apple.com/v/home/be/images/heroes/iphone-15-pro/hero_iphone15pro__i70z9oz3hj2i_large_2x.jpg');
     z-index: 1;
+    cursor: pointer;
 }
 
 .bc-1-text {
@@ -162,6 +166,7 @@
     line-height: 29px;
     color: #2997ff;
     margin-top: 13px;
+    cursor: pointer;
 }
 
 .bc-1-two-cta>a>i {
@@ -170,6 +175,7 @@
     font-size: 14px;
     line-height: 19px;
     color: #2997ff;
+    cursor: pointer;
 }
 
 /* --------------------------------------------------------------------- */
@@ -178,6 +184,7 @@
     background-image: url('https://www.apple.com/v/home/be/images/heroes/iphone-15/hero_iphone15_announce__uuemlcwczn6u_large_2x.jpg');
     margin: 10px 0px;
     z-index: 2;
+    cursor: pointer;
 }
 
 .bc-2-text {
@@ -214,6 +221,7 @@
     line-height: 29px;
     color: #2997ff;
     margin-top: 13px;
+    cursor: pointer;
 }
 
 .bc-2-two-cta>a>i {
@@ -222,6 +230,7 @@
     font-size: 14px;
     line-height: 19px;
     color: #2997ff;
+    cursor: pointer;
 }
 
 /* --------------------------------------------------------------------- */
@@ -230,6 +239,7 @@
     background-image: url('https://www.apple.com/in/home/heroes/apple-watch-series-9/images/hero_apple_watch_series_9_order__d0fi9mb84dci_large_2x.jpg');
     margin: 10px 0px;
     z-index: 3;
+    cursor: pointer;
 }
 
 .bc-3-text {
@@ -271,6 +281,7 @@
     line-height: 29px;
     color: #2997ff;
     margin-top: 13px;
+    cursor: pointer;
 }
 
 .bc-3-two-cta>a>i {
@@ -279,6 +290,7 @@
     font-size: 14px;
     line-height: 19px;
     color: #2997ff;
+    cursor: pointer;
 }
 
 /* ...................................................................... */
@@ -303,6 +315,7 @@
 
 .bc-41 {
     background-image: url('https://www.apple.com/in/home/promos/ipad-pro/images/promo_ipadpro_refresh__evi9utuixwuq_large_2x.jpg');
+    cursor: pointer;
 }
 
 .bc-4-text-1 {
@@ -335,6 +348,7 @@
     font-size: 21px;
     line-height: 29px;
     color: #2997ff;
+    cursor: pointer;
 }
 
 .bc-4-two-cta-1>a>i {
@@ -343,12 +357,14 @@
     font-size: 14px;
     line-height: 19px;
     color: #2997ff;
+    cursor: pointer;
 }
 
 /* ...................................................................... */
 
 .bc-42 {
     background-image: url('https://www.apple.com/in/home/promos/apple-watch-ultra-2/images/promo_apple_watch_ultra2_order__dyxqj5ia98om_large_2x.jpg');
+    cursor: pointer;
 }
 
 .bc-4-text-2 {
@@ -397,6 +413,7 @@
     font-size: 21px;
     line-height: 29px;
     color: #2997ff;
+    cursor: pointer;
 }
 
 .bc-4-two-cta-2>a>i {
@@ -405,12 +422,14 @@
     font-size: 14px;
     line-height: 19px;
     color: #2997ff;
+    cursor: pointer;
 }
 
 /* ...................................................................... */
 
 .bc-43 {
     background-image: url('https://www.apple.com/v/home/be/images/promos/macbook-air-15/promo_macbook_air_15_midnight__3zojl1nanrme_large_2x.jpg');
+    cursor: pointer;
 }
 
 .bc-4-text-3 {
@@ -459,6 +478,7 @@
     font-size: 21px;
     line-height: 29px;
     color: #2997ff;
+    cursor: pointer;
 }
 
 .bc-4-two-cta-3>a>i {
@@ -467,12 +487,14 @@
     font-size: 14px;
     line-height: 19px;
     color: #2997ff;
+    cursor: pointer;
 }
 
 /* ...................................................................... */
 
 .bc-44 {
     background-image: url('https://www.apple.com/v/home/be/images/promos/airpods-pro/promo_airpods_pro_order__d8xv36p4uwae_large_2x.jpg');
+    cursor: pointer;
 }
 
 .bc-4-text-4 {
@@ -515,6 +537,7 @@
     font-size: 21px;
     line-height: 29px;
     color: #2997ff;
+    cursor: pointer;
 }
 
 .bc-4-two-cta-4>a>i {
@@ -523,12 +546,14 @@
     font-size: 14px;
     line-height: 19px;
     color: #2997ff;
+    cursor: pointer;
 }
 
 /* ...................................................................... */
 
 .bc-45 {
     background-image: url('https://www.apple.com/v/home/be/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_large_2x.jpg');
+    cursor: pointer;
 }
 
 .bc-4-text-5 {
@@ -571,6 +596,7 @@
     font-size: 21px;
     line-height: 29px;
     color: #2997ff;
+    cursor: pointer;
 }
 
 .bc-4-two-cta-5>a>i {
@@ -579,12 +605,14 @@
     font-size: 14px;
     line-height: 19px;
     color: #2997ff;
+    cursor: pointer;
 }
 
 /* ...................................................................... */
 
 .bc-46 {
     background-image: url('https://www.apple.com/v/home/be/images/promos/homepod-mini/tile_homepod_mini__b73w4z3ljymu_large_2x.jpg');
+    cursor: pointer;
 }
 
 .bc-4-text-6 {
@@ -622,6 +650,7 @@
     font-size: 21px;
     line-height: 29px;
     color: #2997ff;
+    cursor: pointer;
 }
 
 .bc-4-two-cta-6>a>i {
@@ -630,4 +659,5 @@
     font-size: 14px;
     line-height: 19px;
     color: #2997ff;
+    cursor: pointer;
 }

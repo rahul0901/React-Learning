@@ -2,6 +2,11 @@
     .head-child {
         width: 100%;
     }
+
+    .shop-hover-contents {
+        width: 98%;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width:835px) {
@@ -50,5 +55,10 @@
         align-items: center;
         justify-content: center;
         color: #ffffff;
+    }
+
+    .shop-hover-contents {
+        width: 100%;
+        margin: auto;
     }
 }
