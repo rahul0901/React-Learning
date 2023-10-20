@@ -129,7 +129,7 @@ const Header = (props) => {
                                                     <div className="form-submit-btn">
                                                         <button type='submit'>Submit</button>
                                                     </div>
-                                                    <a>Do not have an Apple ID? <span>Create Yours now</span></a>
+                                                    <a>Do not have an Apple ID? <span onClick={()=> route('/apple-ID')}>Create Yours now</span></a>
                                                 </form>
                                             </div>
                                         </div>}

@@ -4,6 +4,7 @@ import Footer from './Components/Footer';
 import Home from './Components/Home';
 import Store from './Components/Store';
 import IPhone15 from './Components/IPhone15';
+import AppleID from './Components/AppleID';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header navUL={["store", "mac", "iPad", "iPhone", "Watch", "AirPods", "TV & Home", "Entertainment", "Accessories", "Support"]} navULChildPage={['store']} HeadHover1={["shop the latest", "mac", "iPad", "iPhone", "apple Watch", "Accessories"]} HeadHover2={["find a store", "orders status", "ways to buy"]} HeadHover3={["education", "business"]} />
       <Routes>
         <Route exact path='/' element={<Home />} />
+        <Route exact path='/apple-ID' element={<AppleID />} />
         <Route exact path='/store' element={<Store />} />
         <Route exact path='/iphone' element={<IPhone15 />} />
       </Routes>
