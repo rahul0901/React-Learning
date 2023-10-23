@@ -12,8 +12,8 @@
 
 .sis-bc-1{
     width: 100%;
-    margin: 0px 66px;
-    padding: 80px 0px 64px 0px;
+    /* margin: 0px 74px; */
+    padding: 80px 74px 64px 74px;
 }
 
 .sis-bc-1>h2{
@@ -28,4 +28,60 @@
     width: 80%;
     margin: auto;
     border: 2px solid black;
+}
+
+.sis-bc-2-allproducts{
+    width: 100%;
+    border: 2px solid blue;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding: 20px;
+    gap: 20px;
+}
+
+.sis-bc-2-single-products{
+    height: 500px;
+    flex: 0 0 calc(38.33% - 20px);
+    border: 1px solid red;
+}
+
+.sis-bc-2-single-products> h4{
+    width: 100%;
+    height: 97px;
+    padding: 30px 30px 16px 30px;
+    border: 1px solid red;
+}
+
+.sis-bc-2-single-products>img{
+    width: 100%;
+    height: 300px;
+    border: 1px solid red;
+    padding: 0px 0px 20px 0px;
+}
+
+.sis-bc-2-single-products-descrp{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 30px 0px 30px;
+    border: 1px solid green;
+}
+
+.sis-bc-2-single-products-descrp> p{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1d1d1f;
+}
+
+.sis-bc-2-single-products-descrp> button{
+    font-size: 17px;
+    line-height: 20px;
+    padding: 7px 15px;
 }
