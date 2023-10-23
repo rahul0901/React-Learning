@@ -16,7 +16,7 @@ function App() {
         <Route exact path='/apple-ID' element={<AppleID />} />
         <Route exact path='/store' element={<Store />} />
         <Route exact path='/iphone' element={<IPhone15 />} />
-        <Route exact path='/buy-iphone' element={<ShopIphone />} />
+        <Route exact path='/buy-iphone/:id' element={<ShopIphone />} />
       </Routes>
       <Footer FirstUl={['Store', "Mac", "iPad", "iPhone", "Watch", "AirPods", "TV & Home", "AirTag", "Accessories", "Gift Cards"]} FirstUl2={['Wallet']}
         SecondUl={["Manage Your Apple ID", "Apple Store Account", "iCloud.com"]} SecondUl2={["Apple One", "Apple TV+", "Apple Music", "Apple Arcade", "Apple Podcasts", "Apple Books", "App Store"]} ThirdUl={["Find a Store", "Genius Bar", "Today at Apple", "Apple Camp", "Apple Trade In", "Ways to Buy", "Recycling Programme",

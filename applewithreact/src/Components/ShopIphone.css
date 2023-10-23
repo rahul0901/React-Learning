@@ -44,6 +44,7 @@
     height: 500px;
     flex: 0 0 calc(38.33% - 20px);
     border: 1px solid red;
+    cursor: pointer;
 }
 
 .sis-bc-2-single-products> h4{
