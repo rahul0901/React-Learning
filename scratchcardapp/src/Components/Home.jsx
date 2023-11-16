@@ -40,7 +40,7 @@ const Home = () => {
             ) : (
                 <canvas ref={canvasRef} width="300" height="150" className="canvas"></canvas>
             )}
-            {!isScratched && <div className="content">Best Place in Khopoli🤩👉</div>}
+            {!isScratched && <div className="content">Kal ka sab photos👉</div>}
         </div>
     );
 };
