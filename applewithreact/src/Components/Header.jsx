@@ -4,6 +4,7 @@ import './MediaHeader.css'
 import logo from './open_graph_logo-removebg-preview.png';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const Header = (props) => {
 
@@ -18,15 +19,24 @@ const Header = (props) => {
         setData({ ...userData, [event.target.name]: event.target.value });
     }
 
-    const submitForm = (event) => {
+    const submitForm = async (event) => {
         event.preventDefault()
         if (userData.userKaName && userData.userKaEmail && userData.userKaPassword) {
             if (userData.userKaPassword.length >= 6) {
-                toast.success('user ban gaya!')
-                setData({ userKaName: '', userKaEmail: '', userKaPassword: '' })
+
+                const response = await axios.post("http://localhost:8000/api/v1/auth/register", { userData });
+
+                if (response.data.success) {
+                    alert('data submitted')
+                    toast.success('user added!')
+                    setData({ userKaName: '', userKaEmail: '', userKaPassword: '' })
+                    setFormStatus(false);
+                    setShop(false); 
+                    route('/buy-iphone')
+                }
             }
             else {
-                toast.error('password to bada rakh bachii')
+                toast.error('password length should be more than 6 letters')
             }
         }
         else {
@@ -129,7 +139,7 @@ const Header = (props) => {
                                                     <div className="form-submit-btn">
                                                         <button type='submit'>Submit</button>
                                                     </div>
-                                                    <a>Do not have an Apple ID? <span onClick={()=> route('/apple-ID')}>Create Yours now</span></a>
+                                                    <a>Do not have an Apple ID? <span onClick={() => route('/apple-ID')}>Create Yours now</span></a>
                                                 </form>
                                             </div>
                                         </div>}

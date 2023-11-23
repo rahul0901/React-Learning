@@ -32,7 +32,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="home-bc-2-right-child">
-                            <div className="bc-2-right-1">
+                            {/* <div className="bc-2-right-1">
                                 <div className="bc-2-right-1-1">
                                     1.1
                                 </div>
@@ -48,6 +48,13 @@ const Home = () => {
                                             right
                                         </div>
                                     </div>
+                                </div>
+                            </div> */}
+                            <div className="bc-2-right-2">
+                                <div className="bc-2-right-2-child">
+                                <a href="https://www.youtube.com/live/j8H3QjR0dKc?si=CFijahxUrfMbay6b">link</a>
+                                {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/j8H3QjR0dKc?si=FHHGMeNBmBkEECiu&amp;controls=0&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/j8H3QjR0dKc?si=FHHGMeNBmBkEECiu&amp;controls=0&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
                                 </div>
                             </div>
                         </div>

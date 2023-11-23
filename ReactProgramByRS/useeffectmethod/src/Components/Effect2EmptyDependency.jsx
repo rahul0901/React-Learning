@@ -6,6 +6,9 @@ const Effect2EmptyDependency = () => {
 
     useEffect(() => {
         alert('useeffect2')
+        if(example === 4){
+            alert('4 arrived')
+        }
     }, [])
 
     function increament() {

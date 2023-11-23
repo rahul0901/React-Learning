@@ -15,4 +15,21 @@ function LightOnOff() {
     )
 }
 
+// function LightOnOff(){
+
+//     const [LightOn, setLight] = useState(false)
+
+//     const handleLight = LightOn? 'ON' : 'OFF'
+    
+//     return(
+//         <>
+//             <div>Light Page</div>
+//             <p>Light is <span className={handleLight}>{LightOn? 'on' :'off'}</span></p>
+//             <button onClick={()=>setLight((lightchange)=>!lightchange)}>
+//                 {LightOn? 'light chlu hai band kro': 'light band hai chlu kro'}
+//             </button>
+//         </>
+//     )
+// }
+
 export default LightOnOff;

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
-import './HeaderMedia.css'
+import './HeaderMedia.css';
+import logo from './yt_1200-removebg-preview.png'
 
 const Header = () => {
     return (
@@ -12,7 +13,9 @@ const Header = () => {
                             <div className="header-menubar">
                                 <i class="fa-solid fa-bars"></i>
                             </div>
-                            <div className="header-youtube-logo"></div>
+                            <div className="header-youtube-logo">
+                                <img src={logo} alt="" />
+                            </div>
                         </div>
                         <div className="header-searchbox">
                             <div className="header-search">
