@@ -1,41 +1,73 @@
-import { useState } from "react";
-// import axios from 'axios';
+import React, { useState } from 'react';
+import './Todo.css';
+// import styled from 'styled-components';
 
-function Todo() {
+const Todo = () => {
 
-    const [todo, setTodo] = useState({ data: '' })
-    // console.log(todo)
+    // ye todo mai bss form se data lenge store krne apne pss..
+    const [todo, setTodo] = useState({getTodo:''});
 
-    const handlechange = (event) => {
-        setTodo({ ...todo, [event.target.name]: event.target.value })
+    console.log(todo);
+
+    //ye wale mai joh usme joh second todo apan daalenge usme phele wale ko as it is store krke uske baad hi print knre ki liye means cache krega apna saara todo ko ek saath show krne ki liye..
+
+    const [newTodo, setNewTodo] = useState([]);
+
+    const handleChange = ( event ) => {
+        setTodo({...todo, [event.target.name]: event.target.value});
     }
 
     const getData = (event) => {
-        event.preventDefault()
-        if (todo.data.length >= 1) {
-            alert('todo added')
-            console.log(todo)
+        event.preventDefault();
+        if(todo.getTodo){
+            const finalTodo = {
+                finalGetTodo: todo.getTodo
+            }
+
+            // alert(newTodo)
+
+            setNewTodo([...newTodo, finalTodo]);
+            // alert(newTodo , '2nd time')
+
+
+            setTodo({getTodo:''});
         }
-        else {
-            alert('todo cannot be empty')
+        else{
+            alert('Please add your todo..')
         }
     }
 
-    return (
-        <>
-            <div>Todo</div>
-            <form onSubmit={getData}>
-                <input type="text" placeholder="Add todo here" onChange={handlechange} name="data" /> <br />
-                <input type="submit" value="Submit" />
-                {/* <p>{todo.map((item) => (<p>{item}</p>))}</p> */}
-            </form>
-            {todo?.length? <p>{todo.map((item, index) => (
-                <p key={index}>
-                    {item}
-                </p>
-            ))}</p> : <p>Fetching</p>}
-        </>
-    )
+    // const [deleting, setDeleting] = useState(false);
+
+    const handleDelete = (index) =>{
+        const updatedTodo = [...newTodo];
+        updatedTodo.splice(index, 1);
+        setNewTodo(updatedTodo);
+    }
+
+    // const css = deleteButton ? 'show' : 'hidden';
+
+    // const P = styled.p`
+    //     display: none;
+    // `;
+
+  return (
+    <div className="screen-todo">
+        <form onSubmit={getData}>
+            <input type="text" name="getTodo" id="" onChange={handleChange} value={todo.getTodo} />
+            <input type="submit" value="Add Todo" />
+        </form>
+
+        <p>{newTodo.map((item, index)=>(
+            <p key={index}>
+                <p>{item.finalGetTodo}</p>
+                <button onClick={()=>handleDelete(index)} >delete this one..</button>
+                {/* <button onClick={()=>P}>delete this one..</button> */}
+                {/* <button className='css' onClick={()=>!css}>delete this one..</button> */}
+            </p>
+        ))}</p>
+    </div>
+  )
 }
 
-export default Todo;
+export default Todo
