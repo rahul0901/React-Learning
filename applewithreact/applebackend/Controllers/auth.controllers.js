@@ -1,4 +1,5 @@
 import UserModal from "../Modals/User.Modal.js";
+import bcrypt from 'bcrypt';
 
 export const Login = (req, res) => {
     res.send('Login here')
@@ -21,10 +22,19 @@ export const Register = async (req, res) => {
         // uske liye wapis schema ko call krenge..
         // yaha pe key joh hai woh usermodal ka schema se ayega aur value joh hai woh apna upa joh varaible define kiya hai woh jayegaa..
 
+        const hashedPassword = await bcrypt.hash(userKaPassword, 10);
+        console.log(hashedPassword, 'hashedPassword')
+
+        const emailPresent = await UserModal.findOne({email: userKaEmail});
+
+        if(emailPresent) return res.status(404).json({success: false, message: 'email id is already used'})
+
+        console.log('emaillll')
+
         const user = new UserModal({
             name: userKaName,
             email: userKaEmail,
-            password: userKaPassword,
+            password: hashedPassword,
         })
 
         // abhi data aur ye schema ki madat se mongo mai save krenge data ko..
